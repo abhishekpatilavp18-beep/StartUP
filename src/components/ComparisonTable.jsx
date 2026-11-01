@@ -26,7 +26,7 @@ export default function ComparisonTable() {
         </div>
 
         {/* VS Circle */}
-        <div className="w-12 h-12 rounded-full bg-[#0b0b0c] text-white font-bold text-xs flex items-center justify-center flex-shrink-0 z-10 border-4 border-[#fffdf5] shadow-lg">
+        <div className="w-12 h-12 rounded-full bg-[#0b0b0c] text-white font-bold text-xs flex items-center justify-center flex-shrink-0 z-10 border-4 border-white shadow-lg">
           VS
         </div>
 

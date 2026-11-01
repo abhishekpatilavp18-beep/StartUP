@@ -22,9 +22,9 @@ html.lenis, html.lenis body {
   }
 
   body {
-    background-color: #fffdf5;
+    background-color: #ffffff;
     color: #0b0b0c;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   ::selection {
@@ -92,16 +92,4 @@ html.lenis, html.lenis body {
 
 .rolling-button:hover span {
   transform: translateY(-100%);
-}
-
-/* Scroll-triggered fade-in animation */
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-}
-
-.fade-in-up.is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }

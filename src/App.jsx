@@ -20,7 +20,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-[#fffdf5] text-[#0b0b0c] selection:bg-[#9efc65] selection:text-[#0b0b0c]">
+      <div className="min-h-screen flex flex-col bg-white text-[#0b0b0c] selection:bg-[#9efc65] selection:text-[#0b0b0c]">
         <Navbar />
         <main className="flex-1">
           <Routes>
@@ -42,4 +42,3 @@ export default function App() {
     </Router>
   );
 }
-
