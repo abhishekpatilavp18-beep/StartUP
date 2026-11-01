@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+*.local
+_framer_ref
+_video_frames
+.DS_Store
+*.log
