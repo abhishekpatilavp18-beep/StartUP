@@ -109,7 +109,7 @@ export default function Home() {
                 <img
                   src="/images/founder.jpg"
                   alt="AeroTyne Founder"
-                  className="w-full h-[420px] sm:h-[520px] md:h-[600px] object-cover object-[center_18%]"
+                  className="w-full h-[420px] sm:h-[520px] md:h-[600px] object-cover object-[center_18%] scale-[1.18] origin-[center_18%]"
                 />
                 <div className="absolute top-6 left-6 sm:top-10 sm:left-10 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-black/5 shadow-xl">
                   <div className="text-2xl sm:text-3xl font-extrabold text-[#0b0b0c]">{stats.hero[0].value}</div>
