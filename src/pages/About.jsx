@@ -101,7 +101,9 @@ export default function About() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover object-[center_18%] transition-transform duration-500 group-hover:scale-105"
+                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${
+                      member.image.includes('cofounder') ? 'object-[58%_40%]' : 'object-[center_18%]'
+                    }`}
                   />
                 </div>
                 <div className="p-6">

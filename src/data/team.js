@@ -6,13 +6,13 @@ export const teamPromise = {
 export const teamMembers = [
   {
     name: "Abhishek Patil",
-    role: "Founder & Creative Lead",
+    role: "Co-Founder & Web Lead",
     image: "/images/founder.jpg",
   },
   {
-    name: "Dev Okafor",
-    role: "Head of Creative",
-    image: "https://framerusercontent.com/images/wGBT6a6I8Ai2j9ur0WMB6IiiB9M.jpg",
+    name: "Co-Founder",
+    role: "Co-Founder & Growth Lead",
+    image: "/images/cofounder.jpg",
   },
   {
     name: "Priya Raman",

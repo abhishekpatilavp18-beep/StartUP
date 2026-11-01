@@ -105,19 +105,39 @@ export default function Home() {
           {/* Hero Visual & Stat Overlay */}
           <MotionReveal delay={0.2} y={60}>
             <div className="relative max-w-5xl mx-auto mt-12 sm:mt-16">
-              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-2xl bg-[#0b0b0c]">
-                <img
-                  src="/images/founder.jpg"
-                  alt="AeroTyne Founder"
-                  className="w-full h-[420px] sm:h-[520px] md:h-[600px] object-cover object-[center_18%] scale-[1.18] origin-[center_18%]"
-                />
-                <div className="absolute top-6 left-6 sm:top-10 sm:left-10 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-black/5 shadow-xl">
-                  <div className="text-2xl sm:text-3xl font-extrabold text-[#0b0b0c]">{stats.hero[0].value}</div>
-                  <div className="text-xs sm:text-sm font-medium text-[#6a6e6e]">{stats.hero[0].label}</div>
+              <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-2xl bg-[#0b0b0c] grid grid-cols-1 md:grid-cols-2">
+                {/* Abhishek */}
+                <div className="relative h-[340px] sm:h-[440px] md:h-[560px] overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+                  <img
+                    src="/images/founder.jpg"
+                    alt="Abhishek Patil - Co-Founder"
+                    className="w-full h-full object-cover object-[center_18%] scale-[1.18] origin-[center_18%]"
+                  />
+                  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-white text-xs font-medium z-10">
+                    Abhishek • Co-Founder
+                  </div>
                 </div>
-                <div className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 bg-[#0b0b0c]/90 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10 shadow-xl text-white">
-                  <div className="text-xs sm:text-sm font-medium text-[#9efc65] uppercase tracking-wider">{stats.hero[1].label}</div>
-                  <div className="text-2xl sm:text-3xl font-extrabold text-white">{stats.hero[1].value}</div>
+
+                {/* Co-Founder */}
+                <div className="relative h-[340px] sm:h-[440px] md:h-[560px] overflow-hidden">
+                  <img
+                    src="/images/cofounder.jpg"
+                    alt="Co-Founder"
+                    className="w-full h-full object-cover object-[58%_40%] scale-[1.12] origin-[58%_40%]"
+                  />
+                  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-white text-xs font-medium z-10">
+                    Co-Founder
+                  </div>
+                </div>
+
+                {/* Floating Stat Badges */}
+                <div className="absolute top-6 left-6 sm:top-8 sm:left-8 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 sm:p-5 border border-black/5 shadow-xl z-20">
+                  <div className="text-xl sm:text-3xl font-extrabold text-[#0b0b0c]">{stats.hero[0].value}</div>
+                  <div className="text-[11px] sm:text-sm font-medium text-[#6a6e6e]">{stats.hero[0].label}</div>
+                </div>
+                <div className="absolute bottom-6 right-6 sm:bottom-8 sm:right-8 bg-[#0b0b0c]/90 backdrop-blur-md rounded-2xl p-3.5 sm:p-5 border border-white/10 shadow-xl text-white z-20">
+                  <div className="text-[11px] sm:text-sm font-medium text-[#9efc65] uppercase tracking-wider">{stats.hero[1].label}</div>
+                  <div className="text-xl sm:text-3xl font-extrabold text-white">{stats.hero[1].value}</div>
                 </div>
               </div>
 
@@ -171,7 +191,9 @@ export default function Home() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover object-[center_18%] border-2 border-white/20 hover:border-[#9efc65] transition-colors"
+                        className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-white/20 hover:border-[#9efc65] transition-colors ${
+                          member.image.includes('cofounder') ? 'object-[58%_40%]' : 'object-[center_18%]'
+                        }`}
                       />
                     </div>
                   ))}
