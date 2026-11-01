@@ -193,7 +193,7 @@ export const caseStudies = [
     outcome:
       "Direct table reservations grew by 5.2x while mobile bounce rate plummeted by 45%.",
     testimonial: {
-      quote: "Overtake gave our restaurant the digital home it truly deserved.",
+      quote: "AeroTyne gave our restaurant the digital home it truly deserved.",
       author: "Marcus Vance",
       role: "Co-founder, Fieldnote",
       avatar: "https://framerusercontent.com/images/eOi6ikxEOa6cyZHnVHIWZiMzcFY.jpg",

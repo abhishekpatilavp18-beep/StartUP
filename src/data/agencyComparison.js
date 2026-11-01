@@ -10,8 +10,8 @@ export const agencyComparison = {
       "Weeks of back-and-forth for minor menu changes",
     ],
   },
-  overtake: {
-    title: "Overtake",
+  aerotyne: {
+    title: "AeroTyne",
     points: [
       "Custom modern code loading under 1 second on phones",
       "Direct founder contact — no middlemen or account managers",

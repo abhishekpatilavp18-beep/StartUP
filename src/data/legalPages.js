@@ -2,7 +2,7 @@ export const privacyPolicy = {
   title: "Privacy policy",
   lastUpdated: "Aug 20, 2026",
   intro:
-    "At Overtake, we respect your privacy and are committed to protecting the information you share with us. This Privacy Policy explains what information we collect, how we use it, and the choices you have when using our website and services.",
+    "At AeroTyne, we respect your privacy and are committed to protecting the information you share with us. This Privacy Policy explains what information we collect, how we use it, and the choices you have when using our website and services.",
   sections: [
     {
       heading: "1. Information we collect",
@@ -73,7 +73,7 @@ export const privacyPolicy = {
     {
       heading: "9. Contact us",
       paragraphs: [
-        "If you have questions about this Privacy Policy or how we handle your information, please reach out to us at hello@yourbrand.com.",
+        "If you have questions about this Privacy Policy or how we handle your information, please reach out to us at aerotynelabs@gmail.com.",
       ],
     },
   ],

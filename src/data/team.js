@@ -46,7 +46,7 @@ export const values = [
 
 export const aboutStory = {
   badge: "Our story",
-  headline: "We started overtake because good work kept dying in bad dashboards.",
+  headline: "We started AeroTyne because good work kept dying in bad dashboards.",
   paragraphs: [
     "Our founders spent a decade inside agencies that billed for activity and hid behind reach metrics. Growth teams deserved better.",
     "So in 2019 we built the opposite: a small, senior team that ties every decision to revenue, runs creative and media as one loop, and reports numbers a CFO would sign off on. Six years later, that discipline manages over $180M in spend for brands that refuse to plateau.",

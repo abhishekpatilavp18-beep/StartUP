@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "Overtake",
-  title: "Overtake - Modern Framer Template",
+  name: "AeroTyne",
+  title: "AeroTyne - Modern Web Design Studio",
   tagline: "Modern web design studio",
   description: "Bespoke web design, digital menus, and local SEO under one roof built for booked tables not vanity metrics.",
   logo: "https://framerusercontent.com/images/zTpYOsZJ0qkooSosbbQrcI6lU8.svg",
   arrowIcon: "https://framerusercontent.com/images/IhB70bIKwahZMOmvTBIBolMs7s.svg",
   contact: {
-    email: "hello@yourbrand.com",
+    email: "aerotynelabs@gmail.com",
     phone: "+1 (202) 555 0147",
     address: "1238 Echo Ridge Blvd, Suite 400, San Francisco, CA 94103, United States",
     studio: "New York / Remote",
@@ -60,13 +60,13 @@ export const siteConfig = {
       { label: "Privacy Policy", path: "/legal-pages/privacy-policy" },
     ],
   },
-  copyright: "© 2026 Overtake Growth Inc.",
+  copyright: "© 2026 AeroTyne Inc.",
   credits: {
     designer: "Webestica",
     designerUrl: "https://www.webestica.com/",
     platform: "Framer",
     platformUrl: "https://www.framer.com",
   },
-  disclaimer: "Overtake Growth Inc. is an independent performance-marketing agency. Results referenced across this site reflect specific client engagements and are not a guarantee of future performance; media outcomes vary by budget, category, offer, and market conditions. Platform names and logos are trademarks of their respective owners and are used for identification only — reference to them does not imply partnership, endorsement, or certification unless explicitly stated.",
+  disclaimer: "AeroTyne Inc. is an independent web design and digital growth studio. Results referenced across this site reflect specific client engagements and are not a guarantee of future performance; media outcomes vary by budget, category, offer, and market conditions. Platform names and logos are trademarks of their respective owners and are used for identification only — reference to them does not imply partnership, endorsement, or certification unless explicitly stated.",
 };
 

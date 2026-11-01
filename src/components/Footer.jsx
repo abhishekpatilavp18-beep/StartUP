@@ -172,13 +172,16 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Massive Overtake Wordmark */}
-        <div className="py-12 sm:py-16">
-          <img
-            src="https://framerusercontent.com/images/ikO8K7AtZod68TvQW6HvEvdhr4.png"
-            alt="Overtake®"
-            className="w-full max-w-full opacity-80"
-          />
+        {/* Massive AeroTyne Wordmark */}
+        <div className="py-10 sm:py-16 flex items-center justify-center">
+          <div className="flex items-center justify-center gap-3 sm:gap-6 md:gap-8 opacity-85 select-none w-full">
+            <svg viewBox="0 0 31 36" className="h-10 sm:h-16 md:h-24 lg:h-32 xl:h-36 w-auto flex-shrink-0" fill="none">
+              <path fill="#9efc65" d="M0 20c0 7.737 5.885 14.125 13.413 14.925V20.111l-5.32-5.321c-.603-.602-.674-1.582-.112-2.221a1.6 1.6 0 0 1 2.333-.078l3.1 3.1V5.074C5.883 5.875 0 12.263 0 20m11.035 3.347c.63.63.662 1.692.025 2.314a1.594 1.594 0 0 1-2.246-.015l-5.79-5.789c-.601-.602-.673-1.581-.11-2.221a1.6 1.6 0 0 1 2.332-.078zM16.61 5.075V15.59l3.06-3.06c.602-.602 1.582-.674 2.222-.112.7.616.727 1.684.077 2.333l-5.36 5.36v5.614l8.129-8.128c.602-.602 1.582-.673 2.221-.111.701.615.727 1.684.078 2.333L16.61 30.246v4.48c0 .106.093.19.199.177 7.433-.891 13.214-7.234 13.214-14.903 0-7.737-5.885-14.125-13.413-14.925"/>
+            </svg>
+            <span className="text-4xl sm:text-7xl md:text-8xl lg:text-[130px] xl:text-[160px] font-black tracking-tighter text-[#9efc65] leading-none whitespace-nowrap">
+              AeroTyne<span className="text-lg sm:text-3xl md:text-4xl lg:text-5xl text-[#9efc65]/70 align-top ml-1">®</span>
+            </span>
+          </div>
         </div>
 
         {/* Bottom Bar: Copyright & Attribution */}

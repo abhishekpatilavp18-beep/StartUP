@@ -1,4 +1,4 @@
-# Overtake — Performance Marketing Studio (React Rebuild)
+# AeroTyne — Modern Web Design Studio (React Rebuild)
 
 A complete, responsive rebuild of the Framer website at **[https://fierce-embeds-933570.framer.app/](https://fierce-embeds-933570.framer.app/)** built with **React**, **Vite**, **Tailwind CSS**, and **React Router**.
 
@@ -94,7 +94,7 @@ startup/
 │   │   ├── Accordion.jsx      # Animated collapsible FAQ item
 │   │   ├── DisciplinesTabs.jsx# Interactive 4-step discipline switcher
 │   │   ├── OperatingRhythm.jsx# 3-step progress slider
-│   │   ├── ComparisonTable.jsx# Typical Agency vs Overtake comparison
+│   │   ├── ComparisonTable.jsx# Typical Agency vs AeroTyne comparison
 │   │   ├── StatsGrid.jsx      # 3-card metric showcase
 │   │   ├── ContactForm.jsx    # Form with budget & goal selectors
 │   │   ├── CTABanner.jsx      # Reusable bottom CTA banner

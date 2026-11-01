@@ -16,7 +16,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    quote: "Overtake visited our restaurant, took care of everything, and went live in 5 days. Our Google Maps calls shot up immediately.",
+    quote: "AeroTyne visited our restaurant, took care of everything, and went live in 5 days. Our Google Maps calls shot up immediately.",
     name: "Emily Nguyen",
     title: "Owner, Cloud Kitchen Co",
     avatar: "https://framerusercontent.com/images/eZ8inPIozwVXbVStRvddal5ZO84.jpg",
