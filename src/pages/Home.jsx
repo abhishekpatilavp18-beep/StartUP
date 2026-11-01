@@ -45,8 +45,8 @@ export default function Home() {
     <div className="pt-24 sm:pt-28">
       {/* 1. HERO SECTION */}
       <section className="px-3 sm:px-6 lg:px-8 pb-16 sm:pb-24">
-        {/* Giant Creamy / Off-White Hero Card matching Image 2 */}
-        <div className="max-w-7xl mx-auto rounded-[32px] sm:rounded-[40px] bg-[#f0f0f0] pt-14 sm:pt-20 pb-16 sm:pb-24 px-4 sm:px-8 border border-black/[0.04]">
+        {/* Giant Creamy / Off-White Hero Card spanning full width like Framer */}
+        <div className="w-full max-w-[1780px] mx-auto rounded-[32px] sm:rounded-[42px] bg-[#f0f0f0] pt-14 sm:pt-20 pb-16 sm:pb-24 px-4 sm:px-8 border border-black/[0.04]">
           <MotionReveal delay={0.05} y={50}>
             <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 sm:mb-14">
               <Badge
