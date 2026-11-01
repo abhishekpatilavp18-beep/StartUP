@@ -46,7 +46,7 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <section className="relative pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal delay={0.1}>
+          <MotionReveal delay={0.05} y={50}>
             <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 sm:mb-14">
               <Badge text="Performance marketing studio" dot={true} className="mb-6" />
 
@@ -70,7 +70,7 @@ export default function Home() {
           </MotionReveal>
 
           {/* Hero Visual & Stat Overlay */}
-          <MotionReveal delay={0.25} y={45}>
+          <MotionReveal delay={0.2} y={60}>
             <div className="relative max-w-5xl mx-auto">
               <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-2xl bg-[#0b0b0c]">
                 <img
@@ -112,7 +112,7 @@ export default function Home() {
       {/* 3. OUR POINT OF VIEW (Dark Statement Card) */}
       <section className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
+          <MotionReveal y={55}>
             <div className="bg-[#0b0b0c] text-white rounded-[28px] sm:rounded-[36px] p-8 sm:p-14 lg:p-20 border border-white/10 relative overflow-hidden shadow-2xl">
               <div className="absolute top-0 right-0 w-96 h-96 bg-[#9efc65]/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -153,9 +153,7 @@ export default function Home() {
       {/* 4. FOUR DISCIPLINES TABS */}
       <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
-            <DisciplinesTabs />
-          </MotionReveal>
+          <DisciplinesTabs />
         </div>
       </section>
 
@@ -165,16 +163,14 @@ export default function Home() {
       {/* 5. GROWTH YOU CAN POINT AT (Stats Grid) */}
       <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
-            <StatsGrid />
-          </MotionReveal>
+          <StatsGrid />
         </div>
       </section>
 
       {/* 6. SELECTED WORK (Case Studies with Overlapping Stacking Cards Animation) */}
       <section className="py-16 sm:py-24 relative overflow-visible">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
+          <MotionReveal y={45}>
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
               <div>
                 <span className="inline-block text-xs uppercase tracking-wider text-[#6a6e6e] font-semibold mb-3 bg-black/5 px-3 py-1 rounded-full">
@@ -212,7 +208,7 @@ export default function Home() {
       {/* 7. THE NUMBERS BEHIND THE NOISE */}
       <section className="py-12 sm:py-16 border-y border-black/5 bg-[#0b0b0c]/[0.02]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
+          <MotionReveal y={50}>
             <div className="text-center max-w-xl mx-auto mb-10">
               <Badge text="The numbers behind the noise" className="mb-3" />
             </div>
@@ -236,26 +232,22 @@ export default function Home() {
       {/* 8. HOW WE COMPOUND (Operating Rhythm) */}
       <section className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
-            <OperatingRhythm />
-          </MotionReveal>
+          <OperatingRhythm />
         </div>
       </section>
 
       {/* 9. WHY TEAMS SWITCH TO US (Comparison Table) */}
       <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
-            <ComparisonTable />
-          </MotionReveal>
+          <ComparisonTable />
         </div>
       </section>
 
       {/* 10. TESTIMONIALS - Slider Layout */}
       <section className="py-12 sm:py-20 bg-[#0b0b0c] text-white rounded-[32px] sm:rounded-[40px] my-12 mx-4 sm:mx-6 lg:mx-8 px-6 sm:px-12 lg:px-16 border border-white/10 shadow-2xl">
         <div className="max-w-7xl mx-auto">
-          <MotionReveal>
-            {/* Main Founder Quote Banner */}
+          {/* Main Founder Quote Banner */}
+          <MotionReveal y={45}>
             <div className="py-12 sm:py-16 border-b border-white/10 max-w-4xl mx-auto text-center">
               <blockquote className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight text-white mb-6 leading-snug">
                 &ldquo;{featuredQuote.quote}&rdquo;
@@ -266,9 +258,11 @@ export default function Home() {
                 <span className="text-[#9efc65] text-sm">{featuredQuote.role}</span>
               </div>
             </div>
+          </MotionReveal>
 
-            {/* Customer Reviews - Slider */}
-            <div className="pt-16">
+          {/* Customer Reviews - Slider */}
+          <div className="pt-16">
+            <MotionReveal delay={0.1} y={45}>
               <div className="text-center max-w-md mx-auto mb-12">
                 <span className="text-xs uppercase tracking-wider text-[#9efc65] font-semibold block mb-2">
                   Our customers
@@ -277,7 +271,9 @@ export default function Home() {
                   Our success stories
                 </h3>
               </div>
+            </MotionReveal>
 
+            <MotionReveal delay={0.2} y={55}>
               <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-4xl mx-auto">
                 {/* Left: Avatar Stack */}
                 <div className="flex md:flex-col items-center gap-4">
@@ -301,7 +297,7 @@ export default function Home() {
                 </div>
 
                 {/* Right: Testimonial Card */}
-                <div className="flex-1 bg-[#161616] border border-white/10 rounded-[22px] p-8 sm:p-10 transition-all duration-500">
+                <div className="flex-1 bg-[#161616] border border-white/10 rounded-[22px] p-8 sm:p-10 transition-all duration-500 shadow-xl">
                   {/* Star Rating */}
                   <div className="flex items-center gap-1 mb-6">
                     {[...Array(currentTestimonial.rating)].map((_, i) => (
@@ -328,15 +324,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </MotionReveal>
+            </MotionReveal>
+          </div>
         </div>
       </section>
 
       {/* 11. BLOG & INSIGHTS */}
       <section className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <MotionReveal>
+          <MotionReveal y={45}>
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
               <div>
                 <span className="inline-block text-xs uppercase tracking-wider text-[#6a6e6e] font-semibold mb-3 bg-black/5 px-3 py-1 rounded-full">
@@ -350,7 +346,9 @@ export default function Home() {
                 View all insights
               </Button>
             </div>
+          </MotionReveal>
 
+          <MotionReveal delay={0.15} y={55}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {featuredBlogPosts[0] && (
                 <BlogCard post={featuredBlogPosts[0]} featured={true} className="lg:row-span-2" />
@@ -366,7 +364,7 @@ export default function Home() {
       </section>
 
       {/* 12. BOTTOM CTA BANNER */}
-      <MotionReveal>
+      <MotionReveal y={50}>
         <CTABanner />
       </MotionReveal>
     </div>
