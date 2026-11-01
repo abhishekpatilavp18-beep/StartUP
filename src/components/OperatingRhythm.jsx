@@ -24,10 +24,10 @@ export default function OperatingRhythm() {
         <div className="bg-[#f0f0f0] rounded-[28px] sm:rounded-[36px] p-8 sm:p-12 flex flex-col justify-between border border-black/5 min-h-[500px] h-full shadow-sm">
           <div>
             <span className="inline-block text-xs uppercase tracking-wider font-semibold mb-4 bg-[#d0f0ff] text-[#0077aa] px-3 py-1 rounded-full">
-              How we compound.
+              How we deliver.
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0b0b0c] mb-4 leading-tight">
-              A weekly operating rhythm, not a quarterly report.
+              A simple launch process, not months of waiting.
             </h2>
           </div>
 
@@ -47,7 +47,7 @@ export default function OperatingRhythm() {
               10<span className="text-[#ffbcfc]">+</span>
             </span>
             <span className="text-sm text-[#6a6e6e] max-w-xs leading-snug">
-              Years spending and scaling media across every cycle and platform shift.
+              Years building digital experiences that turn visitors into diners.
             </span>
           </div>
         </div>

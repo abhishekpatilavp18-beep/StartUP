@@ -1,18 +1,18 @@
 import React from 'react';
 
 const keywords = [
-  'Programmatic',
-  'GA4',
-  'TikTok',
-  'Google Ads',
-  'Incrementality',
-  'Meta Ads',
-  'Programmatic',
-  'GA4',
-  'TikTok',
-  'Google Ads',
-  'Incrementality',
-  'Meta Ads',
+  'Web Design',
+  'Digital Menus',
+  'Google Maps',
+  'Local SEO',
+  'Reservations',
+  'Mobile First',
+  'Web Design',
+  'Digital Menus',
+  'Google Maps',
+  'Local SEO',
+  'Reservations',
+  'Mobile First',
 ];
 
 function LeafIcon() {
@@ -39,4 +39,3 @@ export default function KeywordTicker() {
     </section>
   );
 }
-

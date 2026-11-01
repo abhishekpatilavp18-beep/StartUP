@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { stats } from '../data/stats';
 import MotionReveal from './MotionReveal';
 
 export default function StatsGrid() {
@@ -13,39 +12,39 @@ export default function StatsGrid() {
             Growth you can point at.
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0b0b0c]">
-            Every engagement starts with a target and ends with a number.
+            Every project starts with a vision and ends with customers.
           </h2>
           <p className="text-[#6a6e6e] text-base sm:text-lg mt-3">
-            Here's the last twelve months.
+            Here is what our modern web builds deliver.
           </p>
         </div>
       </MotionReveal>
 
       {/* Two-column top row */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        {/* Peak ROAS - Yellow Card */}
+        {/* Peak Bookings - Yellow Card */}
         <MotionReveal delay={0.1} y={60}>
           <div className="bg-[#fde589] border border-[#f0d060]/30 rounded-[28px] p-8 sm:p-10 flex flex-col justify-between min-h-[300px] shadow-sm">
             <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-[#0b0b0c]/60 mb-6">
-              <span>Peak ROAS</span>
+              <span>Peak reservations</span>
             </div>
             <div>
               <div className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter text-[#0b0b0c] mb-3">
                 8.1x
               </div>
               <p className="text-sm text-[#0b0b0c]/60">
-                Return on ad spend — DTC skincare, peak quarter
+                Direct table bookings — artisan bistro, peak quarter
               </p>
             </div>
           </div>
         </MotionReveal>
 
-        {/* Spending efficiency - Gray Card */}
+        {/* Speed efficiency - Gray Card */}
         <MotionReveal delay={0.25} y={60}>
           <div className="bg-[#f0f0f0] border border-black/5 rounded-[28px] p-8 sm:p-10 flex flex-col justify-between min-h-[300px] relative overflow-hidden shadow-sm">
             <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-[#6a6e6e] mb-6">
-              <span>Spending efficiency</span>
-              <span className="bg-black/5 px-2 py-0.5 rounded text-[10px]">90-day sprint</span>
+              <span>Mobile load speed</span>
+              <span className="bg-black/5 px-2 py-0.5 rounded text-[10px]">Instant speed</span>
             </div>
             
             {/* Mini bar chart visual */}
@@ -57,10 +56,10 @@ export default function StatsGrid() {
             
             <div className="relative z-10">
               <div className="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter text-[#0b0b0c] mb-3">
-                −41%
+                0.4s
               </div>
               <p className="text-sm text-[#6a6e6e]">
-                $68 → $40 blended CAC, outdoor ecommerce
+                Sub-second load times, zero customer drop-off
               </p>
             </div>
           </div>
@@ -81,13 +80,13 @@ export default function StatsGrid() {
 
           <div className="flex-1 text-center md:text-left">
             <div className="text-xs font-semibold uppercase tracking-wider text-white/50 mb-3">
-              Avg. YoY client revenue growth
+              Avg. increase in customer inquiries
             </div>
             <div className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter text-white mb-3">
               212<span className="text-[#9efc65]">%</span>
             </div>
             <p className="text-sm text-white/60 mb-4">
-              Consolidated spend around high-margin channels
+              High-contrast digital menus and direct reservations
             </p>
             <Link
               to="/case-study/halegrove"

@@ -1,23 +1,22 @@
 export const agencyComparison = {
-  badge: "Why teams switch to us",
-  headline: "Same budget. Different math.",
+  badge: "Why venues choose us",
+  headline: "Bespoke craft vs. bloated generic agencies.",
   typicalAgency: {
     title: "The typical agency",
     points: [
-      "Juniors run the account after the pitch team leaves",
-      "Monthly reports full of impressions and reach",
-      "Creative and media in separate silos",
-      "Long retainers, slow to prove value",
+      "Bloated WordPress templates that take 5 seconds to load",
+      "Monthly retainers with zero actual site updates",
+      "No local SEO or Google Maps optimization",
+      "Weeks of back-and-forth for minor menu changes",
     ],
   },
   overtake: {
     title: "Overtake",
     points: [
-      "Senior operators on your account from day one",
-      "Reporting tied to revenue, CAC, and payback",
-      "Creative and media run as one testing loop",
-      "90-day sprints — value proven fast or we part ways",
+      "Custom modern code loading under 1 second on phones",
+      "Direct founder contact — no middlemen or account managers",
+      "Built-in Google Maps setup so local diners find you first",
+      "Delivered in days with full ownership and zero lock-in",
     ],
   },
 };
-

@@ -50,7 +50,7 @@ export default function Home() {
           <MotionReveal delay={0.05} y={50}>
             <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 sm:mb-14">
               <Badge
-                text="Performance marketing studio"
+                text="Modern web design studio"
                 twoDots={true}
                 variant="white"
                 className="mb-8 shadow-sm"
@@ -65,20 +65,20 @@ export default function Home() {
                     className="h-10 sm:h-14 md:h-16 w-auto object-contain inline-block"
                   />
                 </span>{' '}
-                dollar
+                visitor
                 <br />
-                knew exactly where to go?
+                became a loyal paying guest?
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-[#0b0b0c] max-w-2xl mx-auto mb-10 leading-relaxed font-normal text-center">
                 <span className="bg-[#ffbcfc] text-[#0b0b0c] px-3 py-1 rounded-xl font-medium inline-block mr-1.5 shadow-sm">
-                  Paid media,
+                  Web design,
                 </span>
-                performance creative, and{' '}
+                digital menus, and{' '}
                 <span className="bg-[#0b0b0c] text-white px-3 py-1 rounded-xl font-medium inline-block mx-1.5 shadow-sm">
-                  analytics
+                  local SEO
                 </span>{' '}
-                under one roof built for compounding growth not vanity metrics.
+                under one roof built for booked tables not vanity metrics.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -112,12 +112,12 @@ export default function Home() {
                   className="w-full h-auto object-cover max-h-[560px]"
                 />
                 <div className="absolute top-6 left-6 sm:top-10 sm:left-10 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-black/5 shadow-xl">
-                  <div className="text-2xl sm:text-3xl font-extrabold text-[#0b0b0c]">6.4x</div>
-                  <div className="text-xs sm:text-sm font-medium text-[#6a6e6e]">Blended ROAS</div>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-[#0b0b0c]">{stats.hero[0].value}</div>
+                  <div className="text-xs sm:text-sm font-medium text-[#6a6e6e]">{stats.hero[0].label}</div>
                 </div>
                 <div className="absolute bottom-6 right-6 sm:bottom-10 sm:right-10 bg-[#0b0b0c]/90 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10 shadow-xl text-white">
-                  <div className="text-xs sm:text-sm font-medium text-[#9efc65] uppercase tracking-wider">CAC in 90 days</div>
-                  <div className="text-2xl sm:text-3xl font-extrabold text-white">−41%</div>
+                  <div className="text-xs sm:text-sm font-medium text-[#9efc65] uppercase tracking-wider">{stats.hero[1].label}</div>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-white">{stats.hero[1].value}</div>
                 </div>
               </div>
 
@@ -153,15 +153,15 @@ export default function Home() {
                 <Badge text="Our point of view" variant="dark" className="mb-6" />
 
                 <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-white leading-tight mb-8">
-                  Most agencies sell activity. We sell outcomes.{' '}
+                  Most agencies sell templates. We build revenue.{' '}
                   <span className="text-[#9efc65]">
-                    Every test we run has a number attached,
+                    Every website we craft has a purpose attached,
                   </span>{' '}
-                  and every number feeds the next decision, that loop is the entire agency.
+                  and every visitor turns into a guest, that craft is our entire studio.
                 </h2>
 
                 <p className="text-[#b7bcbc] text-base sm:text-xl font-normal max-w-2xl leading-relaxed mb-8">
-                  A senior team on every account. No hand-offs, no black boxes, no 40-page decks that say nothing.
+                  A focused team on every project. No hand-offs, no bloated code, no complex setups you can't manage.
                 </p>
 
                 {/* Team member avatars */}
@@ -210,7 +210,7 @@ export default function Home() {
                   Selected work
                 </span>
                 <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#0b0b0c]">
-                  Proven results in the market.
+                  Proven results for modern venues.
                 </h2>
               </div>
               <Button to="/case-study" variant="secondary">
@@ -243,7 +243,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <MotionReveal y={50}>
             <div className="text-center max-w-xl mx-auto mb-10">
-              <Badge text="The numbers behind the noise" className="mb-3" />
+              <Badge text="The numbers behind our craft" className="mb-3" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -369,10 +369,10 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
               <div>
                 <span className="inline-block text-xs uppercase tracking-wider text-[#6a6e6e] font-semibold mb-3 bg-black/5 px-3 py-1 rounded-full">
-                  The growth playbook
+                  The restaurant playbook
                 </span>
                 <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#0b0b0c]">
-                  Blog & Insights
+                  Insights & modern web design
                 </h2>
               </div>
               <Button to="/blog" variant="secondary">

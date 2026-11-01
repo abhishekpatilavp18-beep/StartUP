@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Overtake",
   title: "Overtake - Modern Framer Template",
-  tagline: "Performance marketing studio",
-  description: "Paid media, performance creative, and analytics under one roof built for compounding growth not vanity metrics.",
+  tagline: "Modern web design studio",
+  description: "Bespoke web design, digital menus, and local SEO under one roof built for booked tables not vanity metrics.",
   logo: "https://framerusercontent.com/images/zTpYOsZJ0qkooSosbbQrcI6lU8.svg",
   arrowIcon: "https://framerusercontent.com/images/IhB70bIKwahZMOmvTBIBolMs7s.svg",
   contact: {

@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function CTABanner({
-  title = "Ready to outpace your category?",
-  buttonText = "Book a growth audit",
+  title = "Ready to elevate your online presence?",
+  buttonText = "Start a project",
   buttonLink = "/contact",
   className = "",
 }) {

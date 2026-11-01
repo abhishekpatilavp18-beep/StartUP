@@ -1,27 +1,26 @@
 export const disciplines = [
   {
     number: "01",
-    title: "Strategy",
-    description: "Positioning, funnel math, and budget architecture before anything ships or any campaign goes live.",
+    title: "Web design",
+    description: "Bespoke, mobile-first websites crafted to show off your atmosphere, dishes, and brand character.",
     image: "https://framerusercontent.com/images/FGp81SUF2Alvpzq13X6femoAHpM.jpg",
   },
   {
     number: "02",
-    title: "Paid media",
-    description: "Meta, Google, TikTok, and programmatic bought with taste, measured without mercy, and built for lasting impact.",
+    title: "Digital menus",
+    description: "Interactive, high-speed QR menus and seamless online reservations built to convert visitors into diners.",
     image: "https://framerusercontent.com/images/gZEh00FHswNrN4EseMQwuWRWkpI.jpg",
   },
   {
     number: "03",
-    title: "Creative",
-    description: "Ad concepts engineered to stop the scroll and to be measured, optimized, tested, and built for lasting performance.",
+    title: "Local SEO",
+    description: "Google Maps and local search optimization so nearby hungry diners find your restaurant first.",
     image: "https://framerusercontent.com/images/llcfiCT4nzZuDIfqVBn2AIyuso.jpg",
   },
   {
     number: "04",
-    title: "Analytics",
-    description: "Attribution, incrementality, and dashboards that tell the truth across every channel, campaign, and customer journey.",
+    title: "Speed & Host",
+    description: "Sub-second load times, zero-downtime hosting, and smooth performance on every device.",
     image: "https://framerusercontent.com/images/FGp81SUF2Alvpzq13X6femoAHpM.jpg",
   },
 ];
-

@@ -1,9 +1,9 @@
 export const stats = {
   hero: [
-    { value: "6.4x", label: "Blended ROAS" },
-    { value: "−41%", label: "CAC in 90 days" },
+    { value: "6.4x", label: "Table bookings" },
+    { value: "−41%", label: "Bounce rate on phones" },
   ],
-  heroTrust: "Trusted by 40+ growth teams from seed to 9 figures",
+  heroTrust: "Trusted by 40+ restaurants and modern hospitality brands",
   heroAvatars: [
     "https://framerusercontent.com/images/eZ8inPIozwVXbVStRvddal5ZO84.jpg",
     "https://framerusercontent.com/images/nuSd8BM1kTHOuMIUAWaixG8WBHc.jpg",
@@ -11,39 +11,38 @@ export const stats = {
   ],
   showcase: [
     {
-      label: "Peak ROAS",
+      label: "Peak reservations",
       value: "8.1x",
-      description: "Return on ad spend — DTC skincare, peak quarter",
+      description: "Direct table bookings — artisan bistro, peak quarter",
     },
     {
-      label: "Spending efficiency",
-      sublabel: "90-day sprint",
+      label: "Page speed efficiency",
+      sublabel: "Mobile sprint",
       value: "−41%",
-      description: "$68 → $40 blended CAC, outdoor ecommerce",
+      description: "Sub-second load times, zero customer drop-off",
     },
     {
-      label: "Avg. YoY client revenue growth",
+      label: "Avg. increase in customer inquiries",
       value: "212%",
-      description: "Consolidated spend around high-margin channels",
+      description: "High-contrast digital menus and direct reservations",
     },
   ],
   companyStats: [
     {
       value: "40 +",
-      label: "Brands scaled past $1M/mo",
+      label: "Websites designed & launched",
     },
     {
-      value: "$180M +",
-      label: "Media spend managed",
+      value: "100 %",
+      label: "Mobile-first responsive rate",
     },
     {
-      value: "94 %",
-      label: "Client retention rate",
+      value: "98 %",
+      label: "Client satisfaction rate",
     },
   ],
   experienceYears: {
     value: "10+",
-    label: "Years spending and scaling media across every cycle and platform shift.",
+    label: "Years building modern digital experiences that turn visitors into diners.",
   },
 };
-
