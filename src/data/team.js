@@ -5,9 +5,9 @@ export const teamPromise = {
 
 export const teamMembers = [
   {
-    name: "Maya Chen",
-    role: "Founder, Media",
-    image: "https://framerusercontent.com/images/JhMntRZ4YJoZLBup4uG7ZuP460s.jpg",
+    name: "Abhishek Patil",
+    role: "Founder & Creative Lead",
+    image: "/images/founder.jpg",
   },
   {
     name: "Dev Okafor",

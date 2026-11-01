@@ -107,9 +107,9 @@ export default function Home() {
             <div className="relative max-w-5xl mx-auto mt-12 sm:mt-16">
               <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-2xl bg-[#0b0b0c]">
                 <img
-                  src="https://framerusercontent.com/images/pr5LP28gq8vxR0nW6iM3FW68o.jpg"
-                  alt="Growth Dashboard"
-                  className="w-full h-auto object-cover max-h-[560px]"
+                  src="/images/founder.jpg"
+                  alt="AeroTyne Founder"
+                  className="w-full h-[420px] sm:h-[520px] md:h-[600px] object-cover object-[center_18%]"
                 />
                 <div className="absolute top-6 left-6 sm:top-10 sm:left-10 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-black/5 shadow-xl">
                   <div className="text-2xl sm:text-3xl font-extrabold text-[#0b0b0c]">{stats.hero[0].value}</div>
@@ -171,7 +171,7 @@ export default function Home() {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-white/20 hover:border-[#9efc65] transition-colors"
+                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover object-[center_18%] border-2 border-white/20 hover:border-[#9efc65] transition-colors"
                       />
                     </div>
                   ))}
