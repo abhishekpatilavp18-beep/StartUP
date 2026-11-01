@@ -42,36 +42,69 @@ export default function Home() {
   const currentTestimonial = testimonials[activeTestimonial];
 
   return (
-    <div className="pt-24 sm:pt-32">
+    <div className="pt-24 sm:pt-28">
       {/* 1. HERO SECTION */}
-      <section className="relative pb-16 sm:pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="px-3 sm:px-6 lg:px-8 pb-16 sm:pb-24">
+        {/* Giant Creamy / Off-White Hero Card matching Image 2 */}
+        <div className="max-w-7xl mx-auto rounded-[32px] sm:rounded-[40px] bg-[#f0f0f0] pt-14 sm:pt-20 pb-16 sm:pb-24 px-4 sm:px-8 border border-black/[0.04]">
           <MotionReveal delay={0.05} y={50}>
             <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 sm:mb-14">
-              <Badge text="Performance marketing studio" dot={true} className="mb-6" />
+              <Badge
+                text="Performance marketing studio"
+                twoDots={true}
+                variant="white"
+                className="mb-8 shadow-sm"
+              />
 
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[80px] font-extrabold tracking-tight text-[#0b0b0c] leading-[1.08] mb-6 text-balance">
-                What if every dollar knew exactly where to go?
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[80px] font-extrabold tracking-tight text-[#0b0b0c] leading-[1.1] mb-8 text-balance text-center">
+                What if every{' '}
+                <span className="inline-flex items-center align-middle mx-1 sm:mx-2">
+                  <img
+                    src="https://framerusercontent.com/images/yNPyjuv1mEjpaWjcuU9xcQ1nzU.svg"
+                    alt="switch toggle"
+                    className="h-10 sm:h-14 md:h-16 w-auto object-contain inline-block"
+                  />
+                </span>{' '}
+                dollar
+                <br />
+                knew exactly where to go?
               </h1>
 
-              <p className="text-lg sm:text-xl text-[#6a6e6e] max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed font-normal">
-                Paid media, performance creative, and analytics under one roof built for compounding growth not vanity metrics.
+              <p className="text-base sm:text-lg md:text-xl text-[#0b0b0c] max-w-2xl mx-auto mb-10 leading-relaxed font-normal text-center">
+                <span className="bg-[#ffbcfc] text-[#0b0b0c] px-3 py-1 rounded-xl font-medium inline-block mr-1.5 shadow-sm">
+                  Paid media,
+                </span>
+                performance creative, and{' '}
+                <span className="bg-[#0b0b0c] text-white px-3 py-1 rounded-xl font-medium inline-block mx-1.5 shadow-sm">
+                  analytics
+                </span>{' '}
+                under one roof built for compounding growth not vanity metrics.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4">
-                <Button to="/contact" size="lg" variant="primary">
-                  Book a growth audit
-                </Button>
-                <Button to="/case-study" size="lg" variant="secondary">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 bg-[#0b0b0c] hover:bg-[#202022] text-white font-medium text-sm sm:text-base px-8 py-3.5 rounded-full shadow-[0_12px_32px_rgba(0,0,0,0.35)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.45)] hover:scale-105 transition-all cursor-pointer"
+                >
+                  <span>Book a growth audit</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2.5 9.5L9.5 2.5" />
+                    <path d="M4 2.5H9.5V8" />
+                  </svg>
+                </Link>
+                <Link
+                  to="/case-study"
+                  className="inline-flex items-center justify-center bg-transparent hover:bg-black/5 text-[#0b0b0c] border border-black/20 hover:border-black/40 font-medium text-sm sm:text-base px-8 py-3.5 rounded-full transition-all cursor-pointer"
+                >
                   See our case studies
-                </Button>
+                </Link>
               </div>
             </div>
           </MotionReveal>
 
           {/* Hero Visual & Stat Overlay */}
           <MotionReveal delay={0.2} y={60}>
-            <div className="relative max-w-5xl mx-auto">
+            <div className="relative max-w-5xl mx-auto mt-12 sm:mt-16">
               <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-2xl bg-[#0b0b0c]">
                 <img
                   src="https://framerusercontent.com/images/pr5LP28gq8vxR0nW6iM3FW68o.jpg"

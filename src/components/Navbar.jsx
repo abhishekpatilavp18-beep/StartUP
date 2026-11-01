@@ -118,7 +118,7 @@ export default function Navbar() {
           {/* Desktop Right CTA */}
           <div className="hidden md:flex items-center">
             <Button to="/contact" size="md" variant="primary">
-              Book a growth audit
+              Start a project
             </Button>
           </div>
 
@@ -218,7 +218,7 @@ export default function Navbar() {
 
             <div className="pt-4">
               <Button to="/contact" size="lg" variant="primary" className="w-full">
-                Book a growth audit
+                Start a project
               </Button>
             </div>
           </div>
