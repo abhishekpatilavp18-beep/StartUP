@@ -36,9 +36,25 @@ export default function CaseStudyDetail() {
             {study.tagline}
           </p>
 
-          <Button to="/contact" size="md" variant="primary">
-            Build with us
-          </Button>
+          <div className="flex flex-wrap items-center gap-4">
+            <Button to="/contact" size="md" variant="primary">
+              Build with us
+            </Button>
+            {study.liveUrl && (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#0b0b0c]/5 hover:bg-[#0b0b0c]/10 text-[#0b0b0c] font-semibold text-sm px-6 py-3 rounded-full border border-black/10 transition-colors"
+              >
+                <span>Visit live project</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2.5 9.5L9.5 2.5" />
+                  <path d="M4 2.5H9.5V8" />
+                </svg>
+              </a>
+            )}
+          </div>
 
           {/* Meta Details Strip */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-12 mt-12 border-t border-black/10">

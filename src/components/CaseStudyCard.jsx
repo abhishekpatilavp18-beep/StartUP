@@ -53,7 +53,7 @@ export default function CaseStudyCard({ study, className = "" }) {
             </div>
           )}
 
-          <div className="pt-4 border-t border-white/10">
+          <div className="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
             <span className="inline-flex items-center gap-2 bg-[#ffbcfc] hover:bg-[#f0a8ef] text-[#0b0b0c] font-semibold text-sm px-5 py-2.5 rounded-full transition-colors">
               View full case study
               <svg
@@ -70,6 +70,21 @@ export default function CaseStudyCard({ study, className = "" }) {
                 <path d="M4 2.5H9.5V8" />
               </svg>
             </span>
+            {study.liveUrl && (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-1.5 text-xs text-[#9efc65] hover:text-white transition-colors font-medium px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-[#9efc65]"
+              >
+                <span>Live Project</span>
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2.5 9.5L9.5 2.5" />
+                  <path d="M4 2.5H9.5V8" />
+                </svg>
+              </a>
+            )}
           </div>
         </div>
       </div>

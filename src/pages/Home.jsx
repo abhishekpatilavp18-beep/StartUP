@@ -28,7 +28,7 @@ function renderStatValue(value) {
 }
 
 export default function Home() {
-  const selectedCaseStudies = caseStudies.slice(0, 3);
+  const selectedCaseStudies = caseStudies;
   const featuredBlogPosts = blogPosts.slice(0, 3);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
