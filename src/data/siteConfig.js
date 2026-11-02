@@ -7,7 +7,7 @@ export const siteConfig = {
   arrowIcon: "https://framerusercontent.com/images/IhB70bIKwahZMOmvTBIBolMs7s.svg",
   contact: {
     email: "aerotynelabs@gmail.com",
-    phone: "+1 (202) 555 0147",
+    phone: "+91 6363380199",
     address: "1238 Echo Ridge Blvd, Suite 400, San Francisco, CA 94103, United States",
     studio: "New York / Remote",
   },

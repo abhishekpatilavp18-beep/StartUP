@@ -46,9 +46,21 @@ export default function Contact() {
               </div>
 
               {/* Contact Info Pills */}
-              <div className="p-6 bg-[#f0f0f0] rounded-2xl border border-black/5 space-y-3">
+              <div className="p-6 bg-[#f0f0f0] rounded-2xl border border-black/5 space-y-4">
                 <div>
-                  <span className="text-xs uppercase tracking-wider text-[#8b8b8b] font-medium block">
+                  <span className="text-xs uppercase tracking-wider text-[#8b8b8b] font-medium block mb-0.5">
+                    Phone / WhatsApp
+                  </span>
+                  <a
+                    href={`tel:${siteConfig.contact.phone.replace(/\s+/g, '')}`}
+                    className="text-base font-semibold text-[#0b0b0c] hover:underline"
+                  >
+                    {siteConfig.contact.phone}
+                  </a>
+                </div>
+
+                <div>
+                  <span className="text-xs uppercase tracking-wider text-[#8b8b8b] font-medium block mb-0.5">
                     Direct Email
                   </span>
                   <a
@@ -60,7 +72,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <span className="text-xs uppercase tracking-wider text-[#8b8b8b] font-medium block">
+                  <span className="text-xs uppercase tracking-wider text-[#8b8b8b] font-medium block mb-0.5">
                     Studio
                   </span>
                   <span className="text-base font-semibold text-[#0b0b0c]">
