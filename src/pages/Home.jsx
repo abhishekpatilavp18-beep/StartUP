@@ -178,7 +178,7 @@ export default function Home() {
                       />
                     </div>
                   ))}
-                  <span className="text-xs text-white/50 ml-2">Our senior team</span>
+                  <span className="text-xs text-white/50 ml-2">Our team</span>
                 </div>
               </div>
             </div>

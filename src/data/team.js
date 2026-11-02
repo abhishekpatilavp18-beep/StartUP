@@ -1,5 +1,5 @@
 export const teamPromise = {
-  badge: "The senior team promise",
+  badge: "Our team promise",
   headline: "No juniors hiding behind the pitch deck.",
 };
 
