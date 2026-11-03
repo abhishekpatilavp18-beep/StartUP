@@ -10,6 +10,7 @@ export const caseStudies = [
     timeline: "Completed",
     image: "/images/projects/vedant-portfolio.jpg",
     detailImage: "/images/projects/vedant-portfolio.jpg",
+    imageFit: "cover",
     liveUrl: "https://portfolie-2.vedantst6.workers.dev/",
     primaryMetric: {
       value: "60 FPS",
@@ -55,6 +56,7 @@ export const caseStudies = [
     timeline: "Completed",
     image: "/images/projects/screen-tester.jpg",
     detailImage: "/images/projects/screen-tester.jpg",
+    imageFit: "contain",
     liveUrl: "https://screen-tester.com/en",
     primaryMetric: {
       value: "20+",
@@ -100,6 +102,7 @@ export const caseStudies = [
     timeline: "Completed",
     image: "/images/projects/keyboard-tester.png",
     detailImage: "/images/projects/keyboard-tester.png",
+    imageFit: "contain",
     liveUrl: "https://keyboardtester1.com/",
     primaryMetric: {
       value: "0ms",
@@ -145,6 +148,7 @@ export const caseStudies = [
     timeline: "Completed",
     image: "/images/projects/abhishek-portfolio.jpg",
     detailImage: "/images/projects/abhishek-portfolio.jpg",
+    imageFit: "cover",
     liveUrl: "https://abhishekvp.me/",
     primaryMetric: {
       value: "99/100",
@@ -195,6 +199,7 @@ export const caseStudies = [
     timeline: "Completed",
     image: "/images/projects/movie-booking.jpg",
     detailImage: "/images/projects/movie-booking.jpg",
+    imageFit: "contain",
     liveUrl: "https://movie-booking-platform1.pages.dev/",
     primaryMetric: {
       value: "1-Click",
@@ -227,6 +232,98 @@ export const caseStudies = [
       author: "Cinema Goer",
       role: "User Review",
       avatar: "/images/abhishek.jpg",
+    },
+  },
+  {
+    slug: "k-tech-solar",
+    title: "K-Tech Solar",
+    client: "K-Tech Energy",
+    industry: "Renewable energy & solar engineering",
+    tagline: "Engineered an interactive smart solar web platform with instant quote calculators and product showcase.",
+    services: "CleanTech web app, Quote engine, UI/UX",
+    serviceTags: ["3rd Year Minor Project", "CleanTech Web App"],
+    timeline: "Completed",
+    image: "/images/projects/k-tech-solar.jpg",
+    detailImage: "/images/projects/k-tech-solar.jpg",
+    imageFit: "contain",
+    liveUrl: "https://k-tech-bgm.vercel.app/",
+    primaryMetric: {
+      value: "₹0 Bills",
+      label: "Target 25-year energy savings",
+    },
+    metrics: [
+      { value: "₹0 Bills", label: "Target 25-year energy savings" },
+      { value: "100%", label: "Clean solar generation" },
+      { value: "<1 min", label: "Instant quote calculation" },
+    ],
+    challenge: [
+      "Homeowners and businesses needed an easy, transparent way to understand rooftop solar savings and get instant cost estimates without aggressive sales calls.",
+    ],
+    whatWeDid: [
+      {
+        title: "Smart solar calculator.",
+        text: "Built an intuitive interactive quote tool estimating rooftop generation and savings.",
+      },
+      {
+        title: "Dynamic product visualizer.",
+        text: "Showcased solar PV, wind hybrid, water heating, and heat pump integrations.",
+      },
+    ],
+    summaryText:
+      "Interactive smart solar web platform featuring instant quote calculators, clean energy product catalogs, and zero-bill savings projections.",
+    outcome:
+      "A sleek, conversion-focused clean energy platform helping consumers transition to sustainable solar power.",
+    testimonial: {
+      quote: "Modern, clean, and intuitive solar estimate calculator.",
+      author: "Solar Energy Client",
+      role: "Project Review",
+      avatar: "/images/abhishek.jpg",
+    },
+  },
+  {
+    slug: "tesseract-solutions",
+    title: "Tesseract Solutions",
+    client: "Tesseract Solutions",
+    industry: "Precision 3D printing & ecommerce",
+    tagline: "Engineered a sleek 3D printing ecommerce showcase with custom order configurator and product catalog.",
+    services: "Ecommerce platform, 3D printing configurator",
+    serviceTags: ["3rd Year Minor Project", "3D Printing & Ecommerce"],
+    timeline: "Completed",
+    image: "/images/projects/tesseract-solutions.jpg",
+    detailImage: "/images/projects/tesseract-solutions.jpg",
+    imageFit: "contain",
+    liveUrl: "https://tesseract-lovat.vercel.app/",
+    primaryMetric: {
+      value: "3-5 Days",
+      label: "Precision print delivery",
+    },
+    metrics: [
+      { value: "3-5 Days", label: "Precision print delivery" },
+      { value: "100%", label: "Made in India precision" },
+      { value: "0.1mm", label: "High tolerance accuracy" },
+    ],
+    challenge: [
+      "Connecting makers and product designers with on-demand precision 3D printing required an effortless catalog and custom inquiry pipeline.",
+    ],
+    whatWeDid: [
+      {
+        title: "Clean ecommerce architecture.",
+        text: "Designed a dark-mode product showcase for precision manufactured items.",
+      },
+      {
+        title: "Custom request pipeline.",
+        text: "Built a streamlined intake flow for bespoke engineering models.",
+      },
+    ],
+    summaryText:
+      "Modern 3D printing storefront and custom manufacturing platform built for precision engineering and rapid fulfillment.",
+    outcome:
+      "A high-performing digital storefront bringing ideas from digital CAD files to physical reality.",
+    testimonial: {
+      quote: "Super sleek 3D printing storefront with frictionless custom requests.",
+      author: "Product Designer",
+      role: "Customer Review",
+      avatar: "/images/friend.jpg",
     },
   },
 ];

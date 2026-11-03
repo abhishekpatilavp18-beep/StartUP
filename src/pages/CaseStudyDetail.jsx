@@ -100,11 +100,21 @@ export default function CaseStudyDetail() {
       {/* 2. HERO IMAGE */}
       <section className="py-12 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-xl bg-black/5 aspect-[16/9]">
+          <div
+            className={`rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-xl ${
+              study.imageFit === 'contain' || (!['vedant-portfolio', 'abhishek-portfolio'].includes(study.slug))
+                ? 'bg-[#111113] p-4 sm:p-8 flex items-center justify-center'
+                : 'bg-black/5 aspect-[16/9]'
+            }`}
+          >
             <img
               src={study.image}
               alt={study.title}
-              className="w-full h-full object-cover"
+              className={
+                study.imageFit === 'contain' || (!['vedant-portfolio', 'abhishek-portfolio'].includes(study.slug))
+                  ? 'w-full h-auto max-h-[620px] object-contain rounded-xl sm:rounded-2xl shadow-2xl'
+                  : 'w-full h-full object-cover'
+              }
             />
           </div>
         </div>

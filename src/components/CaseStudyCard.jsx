@@ -2,18 +2,36 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function CaseStudyCard({ study, className = "" }) {
+  const isContain = study.imageFit === 'contain' || (!['vedant-portfolio', 'abhishek-portfolio'].includes(study.slug));
+
   return (
     <Link
       to={`/case-study/${study.slug}`}
       className={`group flex flex-col md:flex-row bg-[#0b0b0c] border border-white/10 rounded-[28px] sm:rounded-[36px] overflow-hidden transition-all duration-300 shadow-[0_20px_50px_rgba(0,0,0,0.25)] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] ${className}`}
     >
       {/* Image Container - Left Side */}
-      <div className="relative w-full md:w-[54%] aspect-[16/10] md:aspect-auto md:min-h-[380px] overflow-hidden bg-black">
-        <img
-          src={study.image}
-          alt={study.title}
-          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-        />
+      <div
+        className={`relative w-full md:w-[54%] ${
+          isContain
+            ? 'min-h-[260px] sm:min-h-[320px] md:min-h-[400px] p-4 sm:p-6 lg:p-8 flex items-center justify-center bg-gradient-to-br from-[#17171a] via-[#101012] to-[#0a0a0c]'
+            : 'aspect-[16/10] md:aspect-auto md:min-h-[380px] bg-black'
+        } overflow-hidden`}
+      >
+        {isContain ? (
+          <div className="w-full h-full flex items-center justify-center">
+            <img
+              src={study.image}
+              alt={study.title}
+              className="w-full h-auto max-h-[340px] object-contain rounded-xl sm:rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.6)] border border-white/10 transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+            />
+          </div>
+        ) : (
+          <img
+            src={study.image}
+            alt={study.title}
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+        )}
       </div>
 
       {/* Info Panel - Right Side */}
