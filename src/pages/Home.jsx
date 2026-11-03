@@ -27,6 +27,29 @@ function renderStatValue(value) {
   });
 }
 
+const homeTeamAvatars = [
+  {
+    name: "Abhishek Patil",
+    image: "/images/abhishek.jpg",
+    fitClass: "object-[center_18%] scale-125 origin-[center_18%]",
+  },
+  {
+    name: "Co-Founder",
+    image: "/images/friend.jpg",
+    fitClass: "object-[60%_40%] scale-120 origin-[60%_40%]",
+  },
+  {
+    name: "Team Member",
+    image: "/images/team-member-3.jpg",
+    fitClass: "object-[center_28%] scale-125 origin-[center_28%]",
+  },
+  {
+    name: "Team Member",
+    image: "https://framerusercontent.com/images/rvVsRZjAKkiA0nvOxWWVXzG9L6s.jpg",
+    fitClass: "object-cover",
+  },
+];
+
 export default function Home() {
   const selectedCaseStudies = caseStudies;
   const featuredBlogPosts = blogPosts.slice(0, 3);
@@ -166,7 +189,7 @@ export default function Home() {
 
                 {/* Team member avatars */}
                 <div className="flex items-center gap-3">
-                  {teamMembers.map((member, idx) => (
+                  {homeTeamAvatars.map((member, idx) => (
                     <div
                       key={idx}
                       className="relative group w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-white/20 hover:border-[#9efc65] transition-colors flex-shrink-0"
