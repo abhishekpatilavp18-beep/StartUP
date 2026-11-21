@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { siteConfig } from '../data/siteConfig';
 
 const PROJECT_TYPES = ['Website', 'Web app', 'Tool', 'Portfolio', 'Redesign'];
@@ -21,8 +22,14 @@ function buildMailto({ name, email, projectTypes, message }) {
   return `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
+/** Preselects the project type passed as ?type= (from the home page picker), ignoring unknown values. */
+function initialForm(typeParam) {
+  return PROJECT_TYPES.includes(typeParam) ? { ...EMPTY_FORM, projectTypes: [typeParam] } : EMPTY_FORM;
+}
+
 export default function ContactForm() {
-  const [formData, setFormData] = useState(EMPTY_FORM);
+  const [searchParams] = useSearchParams();
+  const [formData, setFormData] = useState(() => initialForm(searchParams.get('type')));
   const [submitted, setSubmitted] = useState(false);
 
   const toggleType = (type) => {

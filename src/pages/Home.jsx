@@ -10,6 +10,7 @@ import ComparisonTable from '../components/ComparisonTable';
 import CTABanner from '../components/CTABanner';
 import MotionReveal from '../components/MotionReveal';
 import HeroShowcase from '../components/HeroShowcase';
+import HeroIntentPicker from '../components/HeroIntentPicker';
 import { caseStudies } from '../data/caseStudies';
 import { stats } from '../data/stats';
 
@@ -39,13 +40,6 @@ const homeTeamAvatars = [
     fitClass: "object-[center_28%] scale-125 origin-[center_28%]",
   },
 ];
-
-const arrowIcon = (
-  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M2.5 9.5L9.5 2.5" />
-    <path d="M4 2.5H9.5V8" />
-  </svg>
-);
 
 export default function Home() {
   return (
@@ -88,21 +82,7 @@ export default function Home() {
                 designed and coded by a small, founder-led team.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 bg-[#0b0b0c] hover:bg-[#202022] text-white font-medium text-sm sm:text-base px-8 py-3.5 rounded-full shadow-[0_12px_32px_rgba(0,0,0,0.35)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.45)] hover:scale-105 transition-all cursor-pointer"
-                >
-                  <span>Start a project</span>
-                  {arrowIcon}
-                </Link>
-                <Link
-                  to="/case-study"
-                  className="inline-flex items-center justify-center bg-transparent hover:bg-black/5 text-[#0b0b0c] border border-black/20 hover:border-black/40 font-medium text-sm sm:text-base px-8 py-3.5 rounded-full transition-all cursor-pointer"
-                >
-                  See our work
-                </Link>
-              </div>
+              <HeroIntentPicker projectCount={caseStudies.length} workAnchorId="work" />
             </div>
           </MotionReveal>
 
@@ -170,7 +150,7 @@ export default function Home() {
       <KeywordTicker />
 
       {/* 5. SELECTED WORK (stacking cards) */}
-      <section className="py-16 sm:py-24 relative overflow-visible">
+      <section id="work" className="py-16 sm:py-24 relative overflow-visible scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <MotionReveal y={45}>
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14">
