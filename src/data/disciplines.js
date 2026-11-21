@@ -1,26 +1,27 @@
+// What we build. Each preview image is one of our own live projects.
 export const disciplines = [
   {
     number: "01",
-    title: "Web design",
-    description: "Bespoke, mobile-first websites crafted to show off your atmosphere, dishes, and brand character.",
-    image: "/images/site/FGp81SUF2Alvpzq13X6femoAHpM.jpg",
+    title: "Websites",
+    description: "Company and business websites that explain what you do clearly, look good on every phone, and make it easy for people to contact you.",
+    image: "/images/projects/k-tech-solar.jpg",
   },
   {
     number: "02",
-    title: "Digital menus",
-    description: "Interactive, high-speed QR menus and seamless online reservations built to convert visitors into diners.",
-    image: "/images/site/gZEh00FHswNrN4EseMQwuWRWkpI.jpg",
+    title: "Web apps",
+    description: "Full-stack products with accounts, dashboards, and real-time features, like our CTF competition platform and cinema booking system.",
+    image: "/images/projects/fs0cie1y-ctf.jpg",
   },
   {
     number: "03",
-    title: "Local SEO",
-    description: "Google Maps and local search optimization so nearby hungry diners find your restaurant first.",
-    image: "/images/site/llcfiCT4nzZuDIfqVBn2AIyuso.jpg",
+    title: "Tools",
+    description: "Focused browser utilities that do one job well and need nothing installed, like our screen and keyboard testers.",
+    image: "/images/projects/screen-tester.jpg",
   },
   {
     number: "04",
-    title: "Speed & Host",
-    description: "Sub-second load times, zero-downtime hosting, and smooth performance on every device.",
-    image: "/images/site/FGp81SUF2Alvpzq13X6femoAHpM.jpg",
+    title: "Portfolios",
+    description: "Personal sites for developers and creatives that stand out, from clean layouts to fully interactive 3D scenes.",
+    image: "/images/projects/vedant-portfolio.jpg",
   },
 ];

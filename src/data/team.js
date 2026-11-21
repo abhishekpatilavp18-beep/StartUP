@@ -1,6 +1,6 @@
 export const teamPromise = {
-  badge: "Our team promise",
-  headline: "No juniors hiding behind the pitch deck.",
+  badge: "The team",
+  headline: "The people you talk to are the people who build.",
 };
 
 export const teamMembers = [
@@ -19,44 +19,37 @@ export const teamMembers = [
     cardFit: "object-[60%_40%]",
   },
   {
-    name: "Priya Raman",
-    role: "Head of Analytics",
-    image: "/images/site/5SEd7AyguiT73zhKSy6pi9Bno.png",
-    fitClass: "object-cover",
-    cardFit: "object-cover",
-  },
-  {
-    name: "Liam Novak",
-    role: "Head of Growth Strategy",
-    image: "/images/site/rvVsRZjAKkiA0nvOxWWVXzG9L6s.jpg",
-    fitClass: "object-cover",
-    cardFit: "object-cover",
+    name: "Aditi Kamath",
+    role: "Head of Analytics & Head of Growth Strategy",
+    image: "/images/aditi.jpg",
+    fitClass: "object-[center_28%] scale-125 origin-[center_28%]",
+    cardFit: "object-[center_30%]",
   },
 ];
 
 export const values = [
   {
     number: "01",
-    title: "Outcomes over activity",
-    description: "If it doesn't move revenue, CAC, or payback, we don't count it as work.",
+    title: "Show the work",
+    description: "Every project we list is live and linked. No mock-ups passed off as results.",
   },
   {
     number: "02",
-    title: "Truth in the numbers",
-    description: "We'd rather show an uncomfortable metric than a flattering vanity one.",
+    title: "Be straight about scope",
+    description: "You get a clear price and timeline before we start, and honest advice if something isn't worth building.",
   },
   {
     number: "03",
-    title: "Senior hands only",
-    description: "The people who win your pitch are the people who run your account.",
+    title: "Hand it all over",
+    description: "Your code, your domain, your accounts. Nothing is locked to us after launch.",
   },
 ];
 
 export const aboutStory = {
   badge: "Our story",
-  headline: "We started AeroTyne because good work kept dying in bad dashboards.",
+  headline: "We started AeroTyne because we couldn't stop building things.",
   paragraphs: [
-    "Our founders spent a decade inside agencies that billed for activity and hid behind reach metrics. Growth teams deserved better.",
-    "So in 2019 we built the opposite: a small, senior team that ties every decision to revenue, runs creative and media as one loop, and reports numbers a CFO would sign off on. Six years later, that discipline manages over $180M in spend for brands that refuse to plateau.",
+    "AeroTyne began as a group of friends shipping projects together: portfolios, browser tools, a cinema booking app, and eventually a full CTF competition platform.",
+    "After building project after project for ourselves and the people around us, we turned it into a studio. Today we design and code websites, web apps, and tools for anyone who wants something built properly, and we keep every project we've made live so you can see exactly what we can do.",
   ],
 };

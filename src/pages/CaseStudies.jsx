@@ -3,21 +3,15 @@ import Badge from '../components/Badge';
 import CaseStudyCard from '../components/CaseStudyCard';
 import CTABanner from '../components/CTABanner';
 import Button from '../components/Button';
-import { caseStudies } from '../data/caseStudies';
+import { caseStudies, projectCategories } from '../data/caseStudies';
 
 export default function CaseStudies() {
   const [filter, setFilter] = useState('All');
 
-  const categories = ['All', 'Paid media', 'Creative', 'Retention', 'Attribution'];
+  const categories = projectCategories;
 
   const filteredStudies =
-    filter === 'All'
-      ? caseStudies
-      : caseStudies.filter(
-          (cs) =>
-            cs.services.toLowerCase().includes(filter.toLowerCase()) ||
-            cs.serviceTags?.some((t) => t.toLowerCase().includes(filter.toLowerCase()))
-        );
+    filter === 'All' ? caseStudies : caseStudies.filter((cs) => cs.category === filter);
 
   return (
     <div className="pt-24 sm:pt-32">
@@ -25,14 +19,14 @@ export default function CaseStudies() {
       <section className="py-12 sm:py-20 border-b border-black/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <Badge text="Case studies" className="mb-6" />
+            <Badge text="Our work" className="mb-6" />
 
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-[#0b0b0c] leading-[1.08] mb-6">
-              Growth you can point at.
+              Things we've built.
             </h1>
 
             <p className="text-lg sm:text-xl text-[#6a6e6e] font-normal leading-relaxed">
-              See how smarter media, stronger creative, and clear strategy turn marketing challenges into measurable growth.
+              Every project here is live. Open any of them and click around: websites, web apps, and tools we designed and coded ourselves.
             </p>
           </div>
 

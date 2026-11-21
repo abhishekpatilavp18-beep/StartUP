@@ -1,48 +1,19 @@
+import { caseStudies } from './caseStudies';
+
+// Only facts we can back up. The project count is derived from the portfolio itself.
 export const stats = {
-  hero: [
-    { value: "6.4x", label: "Table bookings" },
-    { value: "−41%", label: "Bounce rate on phones" },
-  ],
-  heroTrust: "Trusted by 40+ restaurants and modern hospitality brands",
-  heroAvatars: [
-    "/images/site/eZ8inPIozwVXbVStRvddal5ZO84.jpg",
-    "/images/site/nuSd8BM1kTHOuMIUAWaixG8WBHc.jpg",
-    "/images/site/RfaecSOAwLoEpM5d0m2wamaL7Q.png",
-  ],
-  showcase: [
-    {
-      label: "Peak reservations",
-      value: "8.1x",
-      description: "Direct table bookings — artisan bistro, peak quarter",
-    },
-    {
-      label: "Page speed efficiency",
-      sublabel: "Mobile sprint",
-      value: "−41%",
-      description: "Sub-second load times, zero customer drop-off",
-    },
-    {
-      label: "Avg. increase in customer inquiries",
-      value: "212%",
-      description: "High-contrast digital menus and direct reservations",
-    },
-  ],
   companyStats: [
     {
-      value: "40 +",
-      label: "Websites designed & launched",
+      value: String(caseStudies.length),
+      label: "Live projects you can open right now",
     },
     {
-      value: "100 %",
-      label: "Mobile-first responsive rate",
+      value: "1:1",
+      label: "You talk directly to the people building it",
     },
     {
-      value: "98 %",
-      label: "Client satisfaction rate",
+      value: "100%",
+      label: "Code and domain owned by you at handover",
     },
   ],
-  experienceYears: {
-    value: "10+",
-    label: "Years building modern digital experiences that turn visitors into diners.",
-  },
 };

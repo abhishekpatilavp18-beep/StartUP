@@ -1,22 +1,22 @@
 export const agencyComparison = {
-  badge: "Why venues choose us",
-  headline: "Bespoke craft vs. bloated generic agencies.",
+  badge: "Why work with us",
+  headline: "A small team that builds it, not a big agency that resells it.",
   typicalAgency: {
-    title: "The typical agency",
+    title: "The usual route",
     points: [
-      "Bloated WordPress templates that take 5 seconds to load",
-      "Monthly retainers with zero actual site updates",
-      "No local SEO or Google Maps optimization",
-      "Weeks of back-and-forth for minor menu changes",
+      "Heavy page-builder templates that load slowly on phones",
+      "Account managers between you and the people doing the work",
+      "Monthly retainers even when nothing changes",
+      "Your site locked to their hosting or platform",
     ],
   },
   aerotyne: {
     title: "AeroTyne",
     points: [
-      "Custom modern code loading under 1 second on phones",
-      "Direct founder contact — no middlemen or account managers",
-      "Built-in Google Maps setup so local diners find you first",
-      "Delivered in days with full ownership and zero lock-in",
+      "Hand-written code built for your project",
+      "Direct contact with the founders who build it",
+      "Clear scope and price agreed before we start",
+      "Full ownership of code, domain, and accounts at handover",
     ],
   },
 };

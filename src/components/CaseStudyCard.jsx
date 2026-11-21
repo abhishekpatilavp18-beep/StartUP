@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function CaseStudyCard({ study, className = "" }) {
-  const isContain = study.imageFit === 'contain' || (!['vedant-portfolio', 'abhishek-portfolio'].includes(study.slug));
+  const isContain = study.imageFit !== 'cover';
 
   return (
     <Link

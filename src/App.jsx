@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -9,8 +9,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import CaseStudies from './pages/CaseStudies';
 import CaseStudyDetail from './pages/CaseStudyDetail';
-import Blog from './pages/Blog';
-import BlogDetail from './pages/BlogDetail';
 import Contact from './pages/Contact';
 import Faqs from './pages/Faqs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -28,8 +26,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/case-study" element={<CaseStudies />} />
             <Route path="/case-study/:slug" element={<CaseStudyDetail />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogDetail />} />
+            <Route path="/blog/*" element={<Navigate to="/" replace />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faqs" element={<Faqs />} />
             <Route path="/legal-pages/:slug" element={<PrivacyPolicy />} />

@@ -20,9 +20,9 @@ export default function ComparisonTable() {
 
       {/* Comparison Headers with VS */}
       <MotionReveal delay={0.15} y={40}>
-        <div className="relative flex items-center gap-4 mb-8">
+        <div className="relative flex items-center gap-2 sm:gap-4 mb-8">
           {/* Typical Agency Bar */}
-          <div className="flex-1 bg-[#f0f0f0] border border-black/10 rounded-full px-6 py-4 flex items-center gap-3 shadow-sm">
+          <div className="flex-1 min-w-0 bg-[#f0f0f0] border border-black/10 rounded-full px-4 sm:px-6 py-4 flex items-center gap-3 shadow-sm">
             <span className="w-3 h-3 rounded-full bg-red-400 flex-shrink-0" />
             <h3 className="text-base sm:text-lg font-bold text-[#0b0b0c] truncate">
               {typicalAgency.title}
@@ -35,7 +35,7 @@ export default function ComparisonTable() {
           </div>
 
           {/* AeroTyne Bar */}
-          <div className="flex-1 bg-[#9efc65] border border-[#8ee854]/50 rounded-full px-6 py-4 flex items-center gap-3 shadow-sm">
+          <div className="flex-1 min-w-0 bg-[#9efc65] border border-[#8ee854]/50 rounded-full px-4 sm:px-6 py-4 flex items-center gap-3 shadow-sm">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#0b0b0c" className="flex-shrink-0">
               <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
             </svg>

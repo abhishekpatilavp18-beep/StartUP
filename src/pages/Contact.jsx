@@ -8,9 +8,9 @@ import { contactFaqs } from '../data/faqs';
 
 export default function Contact() {
   const highlights = [
-    'A senior operator reviews your account before the call',
-    'You leave with 2–3 clear wins, whether you hire us or not.',
-    'Minimum engagement is a 90-day sprint, not a long retainer',
+    'A free first call to talk through your idea',
+    'A clear scope, price, and timeline before any work starts',
+    'You own the code, domain, and accounts at handover',
   ];
 
   return (
@@ -21,14 +21,14 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Left: Info & Promises */}
             <div className="lg:col-span-5">
-              <Badge text="Book a growth audit" className="mb-6" />
+              <Badge text="Start a project" className="mb-6" />
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#0b0b0c] leading-[1.08] mb-6">
-                Find your growth leaking.
+                Let's build something.
               </h1>
 
               <p className="text-lg text-[#6a6e6e] leading-relaxed mb-8">
-                Tell us a little about your business. We'll come back within one working day with a 30-minute audit slot no deck, no pitch, just the numbers.
+                Tell us what you have in mind. We'll get back to you, usually within a day, to set up a quick call.
               </p>
 
               {/* Highlights Checkmarks */}
@@ -73,7 +73,7 @@ export default function Contact() {
 
                 <div>
                   <span className="text-xs uppercase tracking-wider text-[#8b8b8b] font-medium block mb-0.5">
-                    Studio
+                    Location
                   </span>
                   <span className="text-base font-semibold text-[#0b0b0c]">
                     {siteConfig.contact.studio}

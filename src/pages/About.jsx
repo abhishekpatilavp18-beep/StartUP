@@ -30,8 +30,8 @@ export default function About() {
       <section className="py-12 sm:py-16 bg-[#0b0b0c] text-white my-8 mx-4 sm:mx-6 lg:mx-8 rounded-[28px] sm:rounded-[36px] border border-white/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
-            {stats.companyStats.map((item, idx) => (
-              <div key={idx} className="pt-6 md:pt-0 md:px-6">
+            {stats.companyStats.map((item) => (
+              <div key={item.label} className="pt-6 md:pt-0 md:px-6">
                 <div className="text-5xl sm:text-6xl font-extrabold text-white tracking-tight mb-2">
                   {item.value}
                 </div>
@@ -52,7 +52,7 @@ export default function About() {
               What we stand on
             </span>
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#0b0b0c]">
-              Principles that guide every dollar.
+              How we work with you.
             </h2>
           </div>
 
@@ -91,7 +91,7 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {teamMembers.map((member) => (
               <div
                 key={member.name}

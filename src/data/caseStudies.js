@@ -1,9 +1,55 @@
+// Project write-ups shown on the home page and /case-study.
+// Keep every claim factual: describe what was built, not invented results.
+export const projectCategories = ['All', 'Web apps', 'Websites', 'Tools', 'Portfolios'];
+
 export const caseStudies = [
+  {
+    slug: "fs0cie1y-ctf",
+    title: "fs0cie1y CTF Platform",
+    client: "fs0cie1y",
+    industry: "Cybersecurity & competitions",
+    category: "Web apps",
+    tagline: "Built a full capture-the-flag platform where teams register, solve challenges, and watch a live scoreboard update in real time.",
+    services: "Full-stack web app, Real-time scoring",
+    serviceTags: ["Full-Stack Web App", "Cybersecurity"],
+    timeline: "Live",
+    image: "/images/projects/fs0cie1y-ctf.jpg",
+    detailImage: "/images/projects/fs0cie1y-ctf.jpg",
+    imageFit: "contain",
+    liveUrl: "https://ctfbyclaude.onrender.com/",
+    primaryMetric: {
+      value: "Live",
+      label: "Real-time scoreboard",
+    },
+    metrics: [
+      { value: "10", label: "Challenge categories" },
+      { value: "Live", label: "Real-time scoreboard" },
+      { value: "2", label: "Player & organizer modes" },
+    ],
+    challenge: [
+      "Running a CTF usually means stitching together a scoreboard, a challenge host, and a spreadsheet of teams. Players and organizers needed one place to do all of it.",
+    ],
+    whatWeDid: [
+      {
+        title: "Player experience.",
+        text: "Challenge board grouped by category, per-team instances with countdowns, paid hints, practice sets, and certificates with a public verification ID.",
+      },
+      {
+        title: "Organizer tools.",
+        text: "Guided event setup, static, regex and per-team dynamic flags, dynamic scoring with first-blood bonus, score freeze, and CSV exports.",
+      },
+    ],
+    summaryText:
+      "A complete competition platform covering web, crypto, reverse engineering, pwn, forensics, OSINT and more, with a live scoreboard and a community hub for finding teammates.",
+    outcome:
+      "The platform is live and hosting its first competitions, with registration open to players and organizers.",
+  },
   {
     slug: "vedant-portfolio",
     title: "Vedant 3D Retro Portfolio",
     client: "Vedant S. Tattimani",
     industry: "Creative web design & 3D WebGL",
+    category: "Portfolios",
     tagline: "Crafted a nostalgic 90s Macintosh desktop experience modeled in interactive 3D with functional mini-apps.",
     services: "3D WebGL, Retro OS simulation",
     serviceTags: ["2nd Year Minor Project", "3D Web Experience"],
@@ -13,43 +59,38 @@ export const caseStudies = [
     imageFit: "cover",
     liveUrl: "https://portfolie-2.vedantst6.workers.dev/",
     primaryMetric: {
-      value: "60 FPS",
-      label: "Smooth 3D interactive rendering",
+      value: "3D",
+      label: "Interactive desk scene in the browser",
     },
     metrics: [
-      { value: "60 FPS", label: "Smooth 3D interactive rendering" },
-      { value: "100%", label: "Interactive CRT environment" },
-      { value: "3D", label: "Immersive desk setup" },
+      { value: "3D", label: "Interactive desk scene" },
+      { value: "WebGL", label: "Rendered in the browser" },
+      { value: "Retro OS", label: "Clickable mini-apps on the CRT" },
     ],
     challenge: [
-      "Standing out in developer portfolios requires unforgettable creative flair. The goal was to build a fully interactive 3D vintage workstation.",
+      "Developer portfolios tend to look the same. The goal was a fully interactive 3D vintage workstation that people remember.",
     ],
     whatWeDid: [
       {
-        title: "Realistic 3D desk modeling.",
-        text: "Rendered vintage Macintosh monitor, mouse, keyboard, and figurines.",
+        title: "3D desk modeling.",
+        text: "Rendered a vintage Macintosh monitor, mouse, keyboard, and figurines.",
       },
       {
-        title: "Interactive OS inside CRT.",
-        text: "Made the computer screen fully clickable with working retro apps.",
+        title: "Interactive OS inside the CRT.",
+        text: "Made the computer screen clickable with working retro apps.",
       },
     ],
     summaryText:
-      "Nostalgic 90s Macintosh desktop experience modeled in full 3D interactive space with working audio players and custom widgets.",
+      "Nostalgic 90s Macintosh desktop experience modeled in a 3D interactive space with audio players and custom widgets.",
     outcome:
-      "An award-worthy interactive experience demonstrating advanced 3D web graphics and creative storytelling.",
-    testimonial: {
-      quote: "Nostalgic, playful, and technically impressive 3D experience.",
-      author: "Vedant S. Tattimani",
-      role: "Software Developer",
-      avatar: "/images/friend.jpg",
-    },
+      "A playful portfolio that shows off 3D web graphics and creative storytelling.",
   },
   {
     slug: "screen-tester",
     title: "Screen Tester",
     client: "Web Utility",
     industry: "Display hardware diagnostics",
+    category: "Tools",
     tagline: "Developed an online display diagnostics suite to inspect dead pixels, refresh rates, contrast, and ghosting.",
     services: "Display diagnostics, Canvas rendering",
     serviceTags: ["3rd Year Minor Project", "Hardware Diagnostics"],
@@ -60,43 +101,38 @@ export const caseStudies = [
     liveUrl: "https://screen-tester.com/en",
     primaryMetric: {
       value: "20+",
-      label: "Targeted screen tests",
+      label: "Screen tests in one place",
     },
     metrics: [
-      { value: "20+", label: "Targeted screen tests" },
-      { value: "144Hz+", label: "High refresh rate detection" },
-      { value: "4K/UHD", label: "Full resolution support" },
+      { value: "20+", label: "Screen tests" },
+      { value: "High Hz", label: "Refresh rate detection" },
+      { value: "0", label: "Installs needed" },
     ],
     challenge: [
-      "Checking new monitors for sub-pixel defects, color uniformity, and backlight bleed traditionally required specialized desktop software.",
+      "Checking a new monitor for dead pixels, color uniformity, and backlight bleed usually means downloading desktop software.",
     ],
     whatWeDid: [
       {
-        title: "Smart device detection.",
-        text: "Automatically identifies display capabilities and suggests tailored diagnostics.",
+        title: "Device detection.",
+        text: "Identifies display capabilities and suggests the right tests.",
       },
       {
-        title: "Precision canvas test patterns.",
-        text: "Constructed high-contrast patterns for dead pixel identification.",
+        title: "Canvas test patterns.",
+        text: "High-contrast patterns built for spotting dead and stuck pixels.",
       },
     ],
     summaryText:
-      "Built a complete browser-based hardware diagnostic tool to test screens for dead pixels, refresh rate, contrast, and ghosting with zero installation.",
+      "A browser-based tool to test screens for dead pixels, refresh rate, contrast, and ghosting with nothing to install.",
     outcome:
-      "A comprehensive online screen testing tool empowering buyers and creators to verify monitor quality before purchase.",
-    testimonial: {
-      quote: "The easiest way to inspect dead pixels and color uniformity on any new monitor.",
-      author: "Hardware Reviewer",
-      role: "Display Specialist",
-      avatar: "/images/abhishek.jpg",
-    },
+      "A free online screen tester that helps buyers check monitor quality before and after purchase.",
   },
   {
     slug: "keycheck",
     title: "Keycheck",
     client: "Web Utility",
     industry: "Hardware diagnostics & testing",
-    tagline: "Built a browser-based multi-key tester and typing latency analyzer detecting stuck or uncalibrated keys instantly.",
+    category: "Tools",
+    tagline: "Built a browser-based multi-key tester that spots stuck or unresponsive keys instantly.",
     services: "Event listener architecture, Real-time DOM testing",
     serviceTags: ["3rd Year Minor Project", "Interactive Utility"],
     timeline: "Completed",
@@ -105,44 +141,39 @@ export const caseStudies = [
     imageFit: "contain",
     liveUrl: "https://keyboardtester1.com/",
     primaryMetric: {
-      value: "0ms",
-      label: "Key stroke detection latency",
+      value: "Real-time",
+      label: "Key press detection",
     },
     metrics: [
-      { value: "0ms", label: "Key stroke detection latency" },
-      { value: "100%", label: "Browser-native zero install" },
-      { value: "100+", label: "Supported keyboard layouts" },
+      { value: "Real-time", label: "Key press detection" },
+      { value: "0", label: "Installs needed" },
+      { value: "3", label: "Layouts: 60%, TKL, full" },
     ],
     challenge: [
-      "Gamers and mechanical keyboard enthusiasts needed a zero-install tool to test multi-key rollover (NKRO) and key chattering without installing untrusted software.",
+      "Gamers and keyboard enthusiasts wanted a quick way to test key rollover and chatter without installing untrusted software.",
     ],
     whatWeDid: [
       {
-        title: "Low-latency event listeners.",
-        text: "Captured raw keydown/keyup events directly in the browser DOM.",
+        title: "Raw event capture.",
+        text: "Captured keydown and keyup events directly in the browser.",
       },
       {
-        title: "Dynamic keyboard visualizer.",
-        text: "Rendered interactive 60%, TKL, and Full 104-key visualizers.",
+        title: "Keyboard visualizer.",
+        text: "Interactive 60%, TKL, and full-size layouts that light up as you type.",
       },
     ],
     summaryText:
-      "Instant multi-key keyboard tester and typing latency analyzer detecting stuck or uncalibrated keys in real time directly in the browser.",
+      "A multi-key keyboard tester that shows stuck or unresponsive keys in real time, right in the browser.",
     outcome:
-      "A fast, reliable keyboard tester used daily by enthusiasts to diagnose hardware issues in real-time.",
-    testimonial: {
-      quote: "Instant key detection with zero lag, making keyboard testing effortless.",
-      author: "Keycheck User",
-      role: "Community Feedback",
-      avatar: "/images/abhishek.jpg",
-    },
+      "A fast, free keyboard tester anyone can open to diagnose hardware issues.",
   },
   {
     slug: "abhishek-portfolio",
     title: "Abhishek Portfolio",
     client: "Abhishek Patil",
     industry: "Full-Stack Developer",
-    tagline: "Engineered a bespoke personal portfolio featuring interactive full-stack showcases and responsive performance.",
+    category: "Portfolios",
+    tagline: "Engineered a personal portfolio with interactive project showcases and a fully responsive layout.",
     services: "Full-stack development, UI/UX",
     serviceTags: ["2nd Year Minor Project", "Full-Stack Portfolio"],
     timeline: "Completed",
@@ -151,49 +182,44 @@ export const caseStudies = [
     imageFit: "cover",
     liveUrl: "https://abhishekvp.me/",
     primaryMetric: {
-      value: "99/100",
-      label: "Lighthouse performance score",
+      value: "Custom",
+      label: "Built from scratch, no template",
     },
     metrics: [
-      { value: "99/100", label: "Lighthouse performance score" },
-      { value: "<0.5s", label: "Initial load latency" },
-      { value: "100%", label: "Responsive mobile fidelity" },
+      { value: "Custom", label: "No template" },
+      { value: "Responsive", label: "Phone to desktop" },
+      { value: "Live", label: "Interactive project previews" },
     ],
     challenge: [
-      "Needed a modern, high-impact digital presence to showcase full-stack development skills, projects, and technical capabilities without generic templates.",
-      "Required seamless responsiveness, micro-interactions, and fast load times across all screen sizes.",
+      "Needed a personal site to present full-stack projects and skills without falling back on a generic template.",
+      "It had to feel smooth and load fast on every screen size.",
     ],
     whatWeDid: [
       {
-        title: "Bespoke full-stack architecture.",
-        text: "Engineered clean, responsive components with optimized bundle delivery.",
+        title: "Clean architecture.",
+        text: "Responsive components with an optimized bundle.",
       },
       {
         title: "Interactive showcases.",
-        text: "Built dynamic project spotlights with live preview interactions.",
+        text: "Project spotlights with live preview interactions.",
       },
       {
-        title: "Performance optimization.",
-        text: "Achieved near-instant rendering with minimal asset payloads.",
+        title: "Performance.",
+        text: "Light asset payloads for quick first load.",
       },
     ],
     summaryText:
-      "A developer portfolio engineered from the ground up to reflect modern frontend standards, clean architecture, and technical capability.",
+      "A developer portfolio built from the ground up around modern frontend practice and clean architecture.",
     outcome:
-      "A standout developer portfolio driving direct inquiries and high engagement across developer communities.",
-    testimonial: {
-      quote: "A clean, modern portfolio that communicates technical rigor from the first second.",
-      author: "Abhishek Patil",
-      role: "Full-Stack Developer",
-      avatar: "/images/abhishek.jpg",
-    },
+      "A personal site that presents projects and skills clearly to recruiters and collaborators.",
   },
   {
     slug: "ticket-total",
     title: "Ticket.Total",
     client: "Entertainment & Ticketing",
     industry: "Cinema booking platform",
-    tagline: "Engineered a dynamic cinema reservation platform featuring session schedules, seat matrices, and fast checkout.",
+    category: "Web apps",
+    tagline: "Engineered a cinema reservation platform with session schedules, seat maps, and a fast checkout.",
     services: "Full-stack web application, Seat mapping",
     serviceTags: ["2nd Year Minor Project", "Entertainment Platform"],
     timeline: "Completed",
@@ -202,91 +228,81 @@ export const caseStudies = [
     imageFit: "contain",
     liveUrl: "https://movie-booking-platform1.pages.dev/",
     primaryMetric: {
-      value: "1-Click",
-      label: "Frictionless seat reservation",
+      value: "Seat map",
+      label: "Pick your exact seat",
     },
     metrics: [
-      { value: "1-Click", label: "Frictionless seat reservation" },
-      { value: "100%", label: "Real-time seat state sync" },
-      { value: "<1s", label: "Checkout flow completion" },
+      { value: "Seat map", label: "Interactive seat picker" },
+      { value: "Formats", label: "IMAX, 4DX, Dolby filters" },
+      { value: "Short", label: "Streamlined checkout flow" },
     ],
     challenge: [
-      "Traditional cinema booking flows are cluttered with ads and convoluted multi-step forms, causing high drop-offs.",
+      "Cinema booking flows are often cluttered with ads and long multi-step forms.",
     ],
     whatWeDid: [
       {
-        title: "Dynamic theater seat grid.",
-        text: "Built intuitive interactive seat picker with real-time availability states.",
+        title: "Theater seat grid.",
+        text: "Interactive seat picker showing availability as you choose.",
       },
       {
-        title: "Streamlined movie scheduling.",
-        text: "Organized showtimes by format (IMAX, 4DX, Dolby Atmos) with instant filtering.",
+        title: "Movie scheduling.",
+        text: "Showtimes organized by format (IMAX, 4DX, Dolby Atmos) with instant filtering.",
       },
     ],
     summaryText:
-      "Comprehensive movie reservation platform featuring session schedules, dynamic seat selection, and streamlined checkout flows.",
+      "A movie reservation platform with session schedules, seat selection, and a short checkout flow.",
     outcome:
-      "A modern, cinema-first web application delivering seamless ticket booking and user satisfaction.",
-    testimonial: {
-      quote: "Clean cinema booking interface without the bloated ad clutter.",
-      author: "Cinema Goer",
-      role: "User Review",
-      avatar: "/images/abhishek.jpg",
-    },
+      "A clean, cinema-first booking experience without the ad clutter.",
   },
   {
     slug: "k-tech-solar",
     title: "K-Tech Solar",
     client: "K-Tech Energy",
     industry: "Renewable energy & solar engineering",
-    tagline: "Engineered an interactive smart solar web platform with instant quote calculators and product showcase.",
-    services: "CleanTech web app, Quote engine, UI/UX",
-    serviceTags: ["3rd Year Minor Project", "CleanTech Web App"],
+    category: "Websites",
+    tagline: "Designed a smart solar company website that explains rooftop solar simply and makes it easy to request a quote.",
+    services: "Company website, Quote requests, UI/UX",
+    serviceTags: ["3rd Year Minor Project", "CleanTech Website"],
     timeline: "Completed",
     image: "/images/projects/k-tech-solar.jpg",
     detailImage: "/images/projects/k-tech-solar.jpg",
     imageFit: "contain",
     liveUrl: "https://ktech-solar.aerotynelabs.workers.dev/",
     primaryMetric: {
-      value: "₹0 Bills",
-      label: "Target 25-year energy savings",
+      value: "Solar",
+      label: "Smart solar systems, day and night",
     },
     metrics: [
-      { value: "₹0 Bills", label: "Target 25-year energy savings" },
-      { value: "100%", label: "Clean solar generation" },
-      { value: "<1 min", label: "Instant quote calculation" },
+      { value: "Solar", label: "Smart solar systems" },
+      { value: "Quote", label: "Free quote requests" },
+      { value: "Responsive", label: "Phone to desktop" },
     ],
     challenge: [
-      "Homeowners and businesses needed an easy, transparent way to understand rooftop solar savings and get instant cost estimates without aggressive sales calls.",
+      "Homeowners and businesses wanted a clear, honest explanation of rooftop solar and an easy way to ask for a quote without a pushy sales call.",
     ],
     whatWeDid: [
       {
-        title: "Smart solar calculator.",
-        text: "Built an intuitive interactive quote tool estimating rooftop generation and savings.",
+        title: "Clear storytelling.",
+        text: "A photo-led home page that walks visitors through solutions and how it works.",
       },
       {
-        title: "Dynamic product visualizer.",
-        text: "Showcased solar PV, wind hybrid, water heating, and heat pump integrations.",
+        title: "Quote and trust sections.",
+        text: "Team, reviews, FAQ, and a free-quote call to action on every screen.",
       },
     ],
     summaryText:
-      "Interactive smart solar web platform featuring instant quote calculators, clean energy product catalogs, and zero-bill savings projections.",
+      "A modern solar company website covering solutions, the installation process, the team, and quote requests.",
     outcome:
-      "A sleek, conversion-focused clean energy platform helping consumers transition to sustainable solar power.",
-    testimonial: {
-      quote: "Modern, clean, and intuitive solar estimate calculator.",
-      author: "Solar Energy Client",
-      role: "Project Review",
-      avatar: "/images/abhishek.jpg",
-    },
+      "A clean, approachable site that helps people take the first step toward solar.",
   },
   {
     slug: "tesseract-solutions",
     title: "Tesseract Solutions",
     client: "Tesseract Solutions",
     industry: "Precision 3D printing & ecommerce",
-    tagline: "Engineered a sleek 3D printing ecommerce showcase with custom order configurator and product catalog.",
-    services: "Ecommerce platform, 3D printing configurator",
+    category: "Websites",
+    tagline: "Engineered a 3D printing storefront with a product catalog and a custom order request flow.",
+    services: "Ecommerce storefront, Custom order flow",
     serviceTags: ["3rd Year Minor Project", "3D Printing & Ecommerce"],
     timeline: "Completed",
     image: "/images/projects/tesseract-solutions.jpg",
@@ -294,36 +310,30 @@ export const caseStudies = [
     imageFit: "contain",
     liveUrl: "https://tesseract-lovat.vercel.app/",
     primaryMetric: {
-      value: "3-5 Days",
-      label: "Precision print delivery",
+      value: "Catalog",
+      label: "Products plus custom requests",
     },
     metrics: [
-      { value: "3-5 Days", label: "Precision print delivery" },
-      { value: "100%", label: "Made in India precision" },
-      { value: "0.1mm", label: "High tolerance accuracy" },
+      { value: "Catalog", label: "Product showcase" },
+      { value: "Custom", label: "Order request flow" },
+      { value: "Dark UI", label: "Built for product photos" },
     ],
     challenge: [
-      "Connecting makers and product designers with on-demand precision 3D printing required an effortless catalog and custom inquiry pipeline.",
+      "Makers and product designers needed a simple way to browse printed products and send custom print requests.",
     ],
     whatWeDid: [
       {
-        title: "Clean ecommerce architecture.",
-        text: "Designed a dark-mode product showcase for precision manufactured items.",
+        title: "Storefront design.",
+        text: "A dark-mode product showcase for precision printed items.",
       },
       {
         title: "Custom request pipeline.",
-        text: "Built a streamlined intake flow for bespoke engineering models.",
+        text: "A streamlined intake flow for bespoke models.",
       },
     ],
     summaryText:
-      "Modern 3D printing storefront and custom manufacturing platform built for precision engineering and rapid fulfillment.",
+      "A 3D printing storefront and custom manufacturing request site.",
     outcome:
-      "A high-performing digital storefront bringing ideas from digital CAD files to physical reality.",
-    testimonial: {
-      quote: "Super sleek 3D printing storefront with frictionless custom requests.",
-      author: "Product Designer",
-      role: "Customer Review",
-      avatar: "/images/friend.jpg",
-    },
+      "A storefront that takes ideas from CAD files to physical parts.",
   },
 ];

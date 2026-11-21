@@ -4,6 +4,12 @@ import MotionReveal from './MotionReveal';
 
 const stepColors = ['#9efc65', '#ffbcfc', '#ffffff'];
 
+const promises = [
+  'Fixed scope and price agreed before we start',
+  'Progress links you can click through as we build',
+  'Code, domain, and accounts handed over to you',
+];
+
 export default function OperatingRhythm() {
   const [activeStep, setActiveStep] = useState(0);
 
@@ -27,29 +33,24 @@ export default function OperatingRhythm() {
               How we deliver.
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#0b0b0c] mb-4 leading-tight">
-              A simple launch process, not months of waiting.
+              A simple process, from first call to live site.
             </h2>
           </div>
 
-          {/* Photo with blue overlay */}
-          <div className="relative rounded-2xl overflow-hidden my-6 aspect-[16/10]">
-            <img
-              src="/images/site/JhMntRZ4YJoZLBup4uG7ZuP460s.jpg"
-              alt="Team at work"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-[#0077aa]/30 mix-blend-multiply" />
-          </div>
-
-          {/* 10+ years stat */}
-          <div className="flex items-baseline gap-3 mt-auto">
-            <span className="text-5xl sm:text-6xl font-extrabold text-[#0b0b0c] tracking-tighter">
-              10<span className="text-[#ffbcfc]">+</span>
-            </span>
-            <span className="text-sm text-[#6a6e6e] max-w-xs leading-snug">
-              Years building digital experiences that turn visitors into diners.
-            </span>
-          </div>
+          {/* What you can count on */}
+          <ul className="mt-8 space-y-3">
+            {promises.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 bg-white rounded-2xl border border-black/5 px-5 py-4 text-sm sm:text-base font-medium text-[#0b0b0c]"
+              >
+                <span className="w-5 h-5 rounded-full bg-[#9efc65] flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5" aria-hidden="true">
+                  ✓
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </MotionReveal>
 
@@ -81,7 +82,7 @@ export default function OperatingRhythm() {
               </p>
 
               {/* Step selector pills */}
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 {processSteps.map((step, idx) => (
                   <button
                     key={step.step}

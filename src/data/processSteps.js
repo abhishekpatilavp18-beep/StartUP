@@ -1,17 +1,17 @@
 export const processSteps = [
   {
     step: "01",
-    title: "Discover",
-    description: "We visit your venue, understand your menu, and capture the exact vibe and ambience of your dining space.",
+    title: "Talk",
+    description: "We get on a call, understand what you need, and agree on scope, timeline, and price before any work starts.",
   },
   {
     step: "02",
-    title: "Design",
-    description: "We craft a bespoke, mobile-first website and digital menu tailored to attract and convert hungry visitors.",
+    title: "Build",
+    description: "We design and code it, sharing progress links along the way so you can give feedback early, not at the end.",
   },
   {
     step: "03",
     title: "Launch",
-    description: "We connect your domain, set up Google Maps, and launch your site live without taking weeks of your time.",
+    description: "We connect your domain, put it live, and hand over the code and accounts so everything stays yours.",
   },
 ];

@@ -17,7 +17,7 @@ export default function Faqs() {
           </h1>
 
           <p className="text-lg sm:text-xl text-[#6a6e6e] font-normal leading-relaxed max-w-2xl mx-auto">
-            Everything you need to know about our sprints, pricing, operating rhythm, and measurement philosophy.
+            How we price, how long projects take, and what you get at the end.
           </p>
         </div>
       </section>

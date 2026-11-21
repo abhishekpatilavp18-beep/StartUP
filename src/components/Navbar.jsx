@@ -46,7 +46,7 @@ export default function Navbar() {
                 <path fill="#319F7E" d="M0 20c0 7.737 5.885 14.125 13.413 14.925V20.111l-5.32-5.321c-.603-.602-.674-1.582-.112-2.221a1.6 1.6 0 0 1 2.333-.078l3.1 3.1V5.074C5.883 5.875 0 12.263 0 20m11.035 3.347c.63.63.662 1.692.025 2.314a1.594 1.594 0 0 1-2.246-.015l-5.79-5.789c-.601-.602-.673-1.581-.11-2.221a1.6 1.6 0 0 1 2.332-.078zM16.61 5.075V15.59l3.06-3.06c.602-.602 1.582-.674 2.222-.112.7.616.727 1.684.077 2.333l-5.36 5.36v5.614l8.129-8.128c.602-.602 1.582-.673 2.221-.111.701.615.727 1.684.078 2.333L16.61 30.246v4.48c0 .106.093.19.199.177 7.433-.891 13.214-7.234 13.214-14.903 0-7.737-5.885-14.125-13.413-14.925"/>
               </svg>
               <span className="text-[21px] sm:text-[23px] font-bold tracking-tight text-[#0b0b0c] flex items-center leading-none">
-                AeroTyne<span className="text-[10px] ml-0.5 -mt-2 font-semibold text-[#0b0b0c]/60">®</span>
+                AeroTyne
               </span>
             </div>
           </Link>
@@ -128,7 +128,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle Button */}
           <div className="flex md:hidden items-center gap-2">
             <Button to="/contact" size="sm" variant="primary" className="text-xs px-3 py-1.5">
-              Audit
+              Contact
             </Button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -177,15 +177,6 @@ export default function Navbar() {
             >
               About
             </Link>
-            <Link
-              to="/blog"
-              className={`text-lg font-medium py-2 border-b border-black/5 ${
-                isActive('/blog') ? 'text-[#0b0b0c] font-bold' : 'text-[#6a6e6e]'
-              }`}
-            >
-              Blog
-            </Link>
-            
             {/* Pages Section */}
             <div className="py-2 border-b border-black/5">
               <span className="text-xs uppercase tracking-wider text-black/40 font-semibold block mb-2">

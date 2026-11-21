@@ -102,7 +102,7 @@ export default function CaseStudyDetail() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className={`rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-xl ${
-              study.imageFit === 'contain' || (!['vedant-portfolio', 'abhishek-portfolio'].includes(study.slug))
+              study.imageFit !== 'cover'
                 ? 'bg-[#111113] p-4 sm:p-8 flex items-center justify-center'
                 : 'bg-black/5 aspect-[16/9]'
             }`}
@@ -111,7 +111,7 @@ export default function CaseStudyDetail() {
               src={study.image}
               alt={study.title}
               className={
-                study.imageFit === 'contain' || (!['vedant-portfolio', 'abhishek-portfolio'].includes(study.slug))
+                study.imageFit !== 'cover'
                   ? 'w-full h-auto max-h-[620px] object-contain rounded-xl sm:rounded-2xl shadow-2xl'
                   : 'w-full h-full object-cover'
               }
@@ -140,12 +140,6 @@ export default function CaseStudyDetail() {
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0b0b0c] mb-6">
               What we did
             </h2>
-            <div className="space-y-4 mb-8 text-base sm:text-lg text-[#6a6e6e] leading-relaxed">
-              <p>
-                We started where every engagement starts: with the numbers. Before touching a single campaign, we rebuilt reporting so every dollar traced back to revenue in one place.
-              </p>
-            </div>
-
             <div className="space-y-4">
               {study.whatWeDid.map((item, idx) => (
                 <div

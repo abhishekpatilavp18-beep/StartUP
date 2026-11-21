@@ -14,10 +14,10 @@ export default function DisciplinesTabs() {
           <MotionReveal delay={0.1}>
             <div>
               <span className="inline-block text-xs uppercase tracking-wider text-[#9efc65] font-semibold mb-3">
-                Four disciplines, one system growth
+                What we build
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
-                Where should your next dollar work?
+                Four kinds of projects, one small team.
               </h2>
 
               {/* Description Text */}
@@ -29,7 +29,7 @@ export default function DisciplinesTabs() {
             </div>
           </MotionReveal>
 
-          {/* Tab Buttons (01 Strategy, 02 Paid media, 03 Creative, 04 Analytics) */}
+          {/* Tab Buttons */}
           <MotionReveal delay={0.25} y={40}>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
               {disciplines.map((item, idx) => {
@@ -60,12 +60,12 @@ export default function DisciplinesTabs() {
         {/* Right Side: Interactive Image Preview */}
         <div className="lg:col-span-5">
           <MotionReveal delay={0.3} y={50}>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-black/40 border border-white/10 shadow-2xl">
+            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-black/40 border border-white/10 shadow-2xl">
               <img
                 key={activeDiscipline.number}
                 src={activeDiscipline.image}
-                alt={activeDiscipline.title}
-                className="w-full h-full object-cover transition-opacity duration-300"
+                alt={`${activeDiscipline.title} we built`}
+                className="w-full h-full object-cover object-left-top transition-opacity duration-300"
               />
               <div className="absolute bottom-4 left-4 bg-[#0b0b0c]/80 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-semibold text-white border border-white/10">
                 {activeDiscipline.number} • {activeDiscipline.title}
