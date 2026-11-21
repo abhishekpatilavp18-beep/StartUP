@@ -45,21 +45,11 @@ export default function HeroShowcase({ projects }) {
           alt={`${featured.title} home page`}
           className="w-full h-auto block transition-transform duration-700 ease-out group-hover:scale-[1.02]"
         />
-        {/* Overlay label on larger screens; on phones it sits under the image so it doesn't cover it */}
-        <div className="hidden sm:block absolute bottom-6 left-6 bg-[#0b0b0c]/90 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/10 shadow-xl text-white">
-          <div className="text-xs font-semibold text-[#9efc65] uppercase tracking-wider">
+        <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#0b0b0c]/90 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/10 shadow-xl text-white">
+          <div className="text-[10px] sm:text-xs font-semibold text-[#9efc65] uppercase tracking-wider">
             Latest project · {featured.category}
           </div>
-          <div className="text-xl font-bold">{featured.title}</div>
-        </div>
-        <div className="sm:hidden flex items-center justify-between gap-3 px-4 py-3 bg-[#0b0b0c] text-white">
-          <div className="min-w-0">
-            <div className="text-[10px] font-semibold text-[#9efc65] uppercase tracking-wider">
-              Latest project · {featured.category}
-            </div>
-            <div className="text-sm font-bold truncate">{featured.title}</div>
-          </div>
-          <span className="text-[#9efc65] flex-shrink-0" aria-hidden="true">↗</span>
+          <div className="text-base sm:text-xl font-bold">{featured.title}</div>
         </div>
       </Link>
 

@@ -24,13 +24,13 @@ export default function ComparisonTable() {
           {/* Typical Agency Bar */}
           <div className="flex-1 min-w-0 bg-[#f0f0f0] border border-black/10 rounded-full px-4 sm:px-6 py-4 flex items-center gap-3 shadow-sm">
             <span className="w-3 h-3 rounded-full bg-red-400 flex-shrink-0" />
-            <h3 className="text-sm sm:text-lg font-bold text-[#0b0b0c] leading-tight">
+            <h3 className="text-base sm:text-lg font-bold text-[#0b0b0c] truncate">
               {typicalAgency.title}
             </h3>
           </div>
 
           {/* VS Circle */}
-          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#0b0b0c] text-white font-bold text-xs flex items-center justify-center flex-shrink-0 z-10 border-4 border-white shadow-lg">
+          <div className="w-12 h-12 rounded-full bg-[#0b0b0c] text-white font-bold text-xs flex items-center justify-center flex-shrink-0 z-10 border-4 border-white shadow-lg">
             VS
           </div>
 
@@ -39,7 +39,7 @@ export default function ComparisonTable() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="#0b0b0c" className="flex-shrink-0">
               <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
             </svg>
-            <h3 className="text-sm sm:text-lg font-bold text-[#0b0b0c] leading-tight">
+            <h3 className="text-base sm:text-lg font-bold text-[#0b0b0c] truncate">
               {aerotyne.title}
             </h3>
           </div>

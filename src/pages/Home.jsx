@@ -172,12 +172,11 @@ export default function Home() {
             {caseStudies.map((study, idx) => (
               <div
                 key={study.slug}
-                // Stack only on screens that are wide AND tall enough to show a whole card;
-                // otherwise (phones, phones in landscape) sticking hides its buttons under the next card.
-                className="relative [@media(min-width:810px)_and_(min-height:700px)]:sticky transition-all duration-300 mb-8 md:mb-[90px] last:mb-0"
+                className="sticky transition-all duration-300"
                 style={{
                   top: `${100 + idx * 24}px`,
                   zIndex: idx + 1,
+                  marginBottom: idx === caseStudies.length - 1 ? '0' : '90px',
                 }}
               >
                 <CaseStudyCard study={study} />
