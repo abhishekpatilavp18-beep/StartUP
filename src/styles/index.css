@@ -47,7 +47,7 @@ html.lenis, html.lenis body {
   }
 }
 
-/* Framer style marquee animation */
+/* Marquee animation */
 @keyframes ticker {
   0% {
     transform: translateX(0);

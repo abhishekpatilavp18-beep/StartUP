@@ -5,9 +5,9 @@ export const stats = {
   ],
   heroTrust: "Trusted by 40+ restaurants and modern hospitality brands",
   heroAvatars: [
-    "https://framerusercontent.com/images/eZ8inPIozwVXbVStRvddal5ZO84.jpg",
-    "https://framerusercontent.com/images/nuSd8BM1kTHOuMIUAWaixG8WBHc.jpg",
-    "https://framerusercontent.com/images/RfaecSOAwLoEpM5d0m2wamaL7Q.png",
+    "/images/site/eZ8inPIozwVXbVStRvddal5ZO84.jpg",
+    "/images/site/nuSd8BM1kTHOuMIUAWaixG8WBHc.jpg",
+    "/images/site/RfaecSOAwLoEpM5d0m2wamaL7Q.png",
   ],
   showcase: [
     {

@@ -45,7 +45,7 @@ const homeTeamAvatars = [
   },
   {
     name: "Team Member",
-    image: "https://framerusercontent.com/images/rvVsRZjAKkiA0nvOxWWVXzG9L6s.jpg",
+    image: "/images/site/rvVsRZjAKkiA0nvOxWWVXzG9L6s.jpg",
     fitClass: "object-cover",
   },
 ];
@@ -68,7 +68,7 @@ export default function Home() {
     <div className="pt-24 sm:pt-28">
       {/* 1. HERO SECTION */}
       <section className="px-3 sm:px-6 lg:px-8 pb-16 sm:pb-24">
-        {/* Giant Creamy / Off-White Hero Card spanning full width like Framer */}
+        {/* Giant Creamy / Off-White Hero Card spanning full width */}
         <div className="w-full max-w-[1780px] mx-auto rounded-[32px] sm:rounded-[42px] bg-[#f0f0f0] pt-14 sm:pt-20 pb-16 sm:pb-24 px-4 sm:px-8 border border-black/[0.04]">
           <MotionReveal delay={0.05} y={50}>
             <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-10 sm:mb-14">
@@ -83,7 +83,7 @@ export default function Home() {
                 What if every{' '}
                 <span className="inline-flex items-center align-middle mx-1 sm:mx-2">
                   <img
-                    src="https://framerusercontent.com/images/yNPyjuv1mEjpaWjcuU9xcQ1nzU.svg"
+                    src="/images/site/yNPyjuv1mEjpaWjcuU9xcQ1nzU.svg"
                     alt="switch toggle"
                     className="h-10 sm:h-14 md:h-16 w-auto object-contain inline-block"
                   />
@@ -130,7 +130,7 @@ export default function Home() {
             <div className="relative max-w-5xl mx-auto mt-12 sm:mt-16">
               <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden border border-black/10 shadow-2xl bg-[#0b0b0c]">
                 <img
-                  src="https://framerusercontent.com/images/pr5LP28gq8vxR0nW6iM3FW68o.jpg"
+                  src="/images/site/pr5LP28gq8vxR0nW6iM3FW68o.jpg"
                   alt="Growth Dashboard"
                   className="w-full h-auto object-cover max-h-[560px]"
                 />

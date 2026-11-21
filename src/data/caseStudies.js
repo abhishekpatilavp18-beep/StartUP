@@ -246,7 +246,7 @@ export const caseStudies = [
     image: "/images/projects/k-tech-solar.jpg",
     detailImage: "/images/projects/k-tech-solar.jpg",
     imageFit: "contain",
-    liveUrl: "https://k-tech-bgm.vercel.app/",
+    liveUrl: "https://ktech-solar.aerotynelabs.workers.dev/",
     primaryMetric: {
       value: "₹0 Bills",
       label: "Target 25-year energy savings",

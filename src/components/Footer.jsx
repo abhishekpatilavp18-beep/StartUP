@@ -17,15 +17,15 @@ export default function Footer() {
   const partnerBadges = [
     {
       name: 'Google Partner',
-      image: 'https://framerusercontent.com/images/AOV2DTNHK6JgQPDMFMSruGw.jpg',
+      image: '/images/site/AOV2DTNHK6JgQPDMFMSruGw.jpg',
     },
     {
       name: 'Meta Business Partner',
-      image: 'https://framerusercontent.com/images/jZfxvFmbpRDqIBZd8yCfHG8A.png',
+      image: '/images/site/jZfxvFmbpRDqIBZd8yCfHG8A.png',
     },
     {
       name: 'Keap Certified',
-      image: 'https://framerusercontent.com/images/lwc0nMAf1TpEtjhnpXgaHR00P8.png',
+      image: '/images/site/lwc0nMAf1TpEtjhnpXgaHR00P8.png',
     },
   ];
 
@@ -196,15 +196,6 @@ export default function Footer() {
               className="text-white hover:underline"
             >
               {siteConfig.credits.designer}
-            </a>
-            , Powered by{' '}
-            <a
-              href={siteConfig.credits.platformUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:underline"
-            >
-              {siteConfig.credits.platform}
             </a>
           </span>
         </div>

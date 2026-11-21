@@ -6,7 +6,7 @@ export const blogPosts = [
     category: "Attribution",
     readTime: "4 min read",
     featured: true,
-    image: "https://framerusercontent.com/images/ZXR8r88vg0CDlff2uYUjBsoG9ic.jpg",
+    image: "/images/site/ZXR8r88vg0CDlff2uYUjBsoG9ic.jpg",
     sectionTitle: "Why blended ROAS misleads",
     intro:
       "Blended ROAS looks simple on the surface: total revenue divided by total advertising spend. It gives teams one number to track and makes performance reporting feel straightforward. But that simplicity can hide what is really happening across channels, campaigns, and customer journeys.",
@@ -32,7 +32,7 @@ export const blogPosts = [
     category: "Creative",
     readTime: "4 min read",
     featured: false,
-    image: "https://framerusercontent.com/images/923IUV2dF1d8oNULfN2aexIu0.jpg",
+    image: "/images/site/923IUV2dF1d8oNULfN2aexIu0.jpg",
     sectionTitle: "Simple framework for stronger hooks",
     intro:
       "Most ads lose attention before the message even has a chance to land. We wanted to understand whether the opening frames were the problem, so we stopped changing entire creatives and focused on one variable: the hook.",
@@ -59,7 +59,7 @@ export const blogPosts = [
     category: "Budgeting",
     readTime: "5 min read",
     featured: false,
-    image: "https://framerusercontent.com/images/CAPyErHnuBtEbZCxasNC34o9sNU.jpg",
+    image: "/images/site/CAPyErHnuBtEbZCxasNC34o9sNU.jpg",
     sectionTitle: "Smarter budgets, better results",
     intro:
       "Setting a daily budget sounds simple, but the wrong approach can leave your ad platform guessing where and when to spend. We treat budgets as a strategic input, not just a number inside an ad account. The goal is to give the algorithm enough room to learn while keeping spend aligned with real business outcomes.",
@@ -86,7 +86,7 @@ export const blogPosts = [
     category: "Conversion",
     readTime: "6 min read",
     featured: false,
-    image: "https://framerusercontent.com/images/CzJJmbd2zRfnDP8scT9lMf1V76I.jpg",
+    image: "/images/site/CzJJmbd2zRfnDP8scT9lMf1V76I.jpg",
     sectionTitle: "Connecting acquisition intent to conversion reality",
     intro:
       "Traffic that doesn't convert is just an expensive vanity metric. High-performing growth teams know that the click is just the handshake — the landing experience determines the payoff.",
@@ -110,7 +110,7 @@ export const blogPosts = [
     category: "Creative",
     readTime: "6 min read",
     featured: false,
-    image: "https://framerusercontent.com/images/5l86we6KSO2R1dD6zx0v84028c.jpg",
+    image: "/images/site/5l86we6KSO2R1dD6zx0v84028c.jpg",
     sectionTitle: "Overcoming creative fatigue with structured production",
     intro:
       "Every winning creative eventually hits a ceiling. The frequency rises, CPMs climb, and the conversion rate slowly erodes. Knowing when and how to rotate angles is the difference between consistent scaling and painful plateaus.",
@@ -134,7 +134,7 @@ export const blogPosts = [
     category: "Attribution",
     readTime: "4 min read",
     featured: false,
-    image: "https://framerusercontent.com/images/vOkFq0PV27NnhD0gIQrXsQZnE.jpg",
+    image: "/images/site/vOkFq0PV27NnhD0gIQrXsQZnE.jpg",
     sectionTitle: "Building a CFO-ready growth scorecard",
     intro:
       "Platform dashboards are incentivized to claim credit for every conversion they touch. Growth leadership needs metrics that correspond to actual bank deposits and net margin expansion.",

@@ -1,6 +1,6 @@
 # AeroTyne — Modern Web Design Studio (React Rebuild)
 
-A complete, responsive rebuild of the Framer website at **[https://fierce-embeds-933570.framer.app/](https://fierce-embeds-933570.framer.app/)** built with **React**, **Vite**, **Tailwind CSS**, and **React Router**.
+A complete, responsive studio website built with **React**, **Vite**, **Tailwind CSS**, and **React Router**.
 
 This project accurately preserves:
 - **Layouts & Spacing**: Exact sections, grid structures, aspect ratios, responsive container widths, and padding.
@@ -133,7 +133,7 @@ All text, copy, and images are decoupled from UI components and stored in clean,
 
 ## 📱 Responsive Breakpoints
 
-Designed to match Framer's exact responsive variant logic:
+Responsive variant logic:
 - **Mobile**: `< 810px` (Clean vertical flow, hamburger menu, single-column cards, full-width touch targets)
 - **Tablet**: `810px – 1199px` (2-column layouts, refined padding, responsive type scales)
 - **Desktop**: `>= 1200px` (Full 3-column grids, floating stat badges, spacious typography)

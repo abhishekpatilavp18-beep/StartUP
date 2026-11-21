@@ -72,7 +72,7 @@ export default function StatsGrid() {
           {/* Woman photo */}
           <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-white/10">
             <img
-              src="https://framerusercontent.com/images/eZ8inPIozwVXbVStRvddal5ZO84.jpg"
+              src="/images/site/eZ8inPIozwVXbVStRvddal5ZO84.jpg"
               alt="Client"
               className="w-full h-full object-cover"
             />

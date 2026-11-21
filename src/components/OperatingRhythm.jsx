@@ -34,7 +34,7 @@ export default function OperatingRhythm() {
           {/* Photo with blue overlay */}
           <div className="relative rounded-2xl overflow-hidden my-6 aspect-[16/10]">
             <img
-              src="https://framerusercontent.com/images/JhMntRZ4YJoZLBup4uG7ZuP460s.jpg"
+              src="/images/site/JhMntRZ4YJoZLBup4uG7ZuP460s.jpg"
               alt="Team at work"
               className="w-full h-full object-cover"
             />

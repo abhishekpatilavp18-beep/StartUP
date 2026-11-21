@@ -21,14 +21,14 @@ export const teamMembers = [
   {
     name: "Priya Raman",
     role: "Head of Analytics",
-    image: "https://framerusercontent.com/images/5SEd7AyguiT73zhKSy6pi9Bno.png",
+    image: "/images/site/5SEd7AyguiT73zhKSy6pi9Bno.png",
     fitClass: "object-cover",
     cardFit: "object-cover",
   },
   {
     name: "Liam Novak",
     role: "Head of Growth Strategy",
-    image: "https://framerusercontent.com/images/rvVsRZjAKkiA0nvOxWWVXzG9L6s.jpg",
+    image: "/images/site/rvVsRZjAKkiA0nvOxWWVXzG9L6s.jpg",
     fitClass: "object-cover",
     cardFit: "object-cover",
   },

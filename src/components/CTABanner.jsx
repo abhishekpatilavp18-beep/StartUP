@@ -23,7 +23,7 @@ export default function CTABanner({
 
           <Link
             to={buttonLink}
-            className="inline-flex items-center gap-2.5 bg-[#9efc65] hover:bg-[#8ee854] text-[#0b0b0c] font-semibold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-full shadow-[0_0_40px_rgba(158,252,101,0.4)] hover:shadow-[0_0_60px_rgba(158,252,101,0.5)] transition-all duration-300 -rotate-[8deg] hover:-rotate-[4deg] hover:scale-105"
+            className="inline-flex items-center gap-2.5 bg-[#9efc65] hover:bg-[#8ee854] text-[#0b0b0c] font-semibold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-full shadow-[0_0_40px_rgba(158,252,101,0.4)] hover:shadow-[0_0_60px_rgba(158,252,101,0.5)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-105"
           >
             <span>{buttonText}</span>
             <svg
