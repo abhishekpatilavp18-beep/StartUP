@@ -182,10 +182,10 @@ export default function Navbar() {
               <span className="text-xs uppercase tracking-wider text-black/40 font-semibold block mb-2">
                 Pages & Support
               </span>
-              <div className="flex flex-col gap-2 pl-3">
+              <div className="flex flex-col pl-3">
                 <Link
                   to="/faqs"
-                  className={`text-base font-medium ${
+                  className={`block py-2.5 text-base font-medium ${
                     isActive('/faqs') ? 'text-[#0b0b0c] font-bold' : 'text-[#6a6e6e]'
                   }`}
                 >
@@ -193,7 +193,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   to="/contact"
-                  className={`text-base font-medium ${
+                  className={`block py-2.5 text-base font-medium ${
                     isActive('/contact') ? 'text-[#0b0b0c] font-bold' : 'text-[#6a6e6e]'
                   }`}
                 >
@@ -201,7 +201,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   to="/legal-pages/privacy-policy"
-                  className={`text-base font-medium ${
+                  className={`block py-2.5 text-base font-medium ${
                     isActive('/legal-pages/privacy-policy') ? 'text-[#0b0b0c] font-bold' : 'text-[#6a6e6e]'
                   }`}
                 >

@@ -57,7 +57,8 @@ export default function OperatingRhythm() {
       {/* RIGHT: Dark Circle with step card */}
       <MotionReveal delay={0.25} y={60}>
         <div className="flex items-center justify-center h-full">
-          <div className="relative w-full aspect-square max-w-[540px] rounded-full bg-[#0b0b0c] border border-white/10 flex items-center justify-center p-8 sm:p-14 shadow-2xl">
+          {/* Rounded panel on smaller screens; a true circle only where the step card fits inside it */}
+          <div className="relative w-full max-w-[540px] rounded-[32px] xl:rounded-full xl:aspect-square bg-[#0b0b0c] border border-white/10 flex items-center justify-center px-5 pt-6 pb-14 sm:px-10 sm:pt-10 xl:p-14 shadow-2xl">
             {/* Floating step card */}
             <div
               className="w-full max-w-[320px] rounded-[24px] p-7 sm:p-8 transition-all duration-500 shadow-2xl"
@@ -101,7 +102,7 @@ export default function OperatingRhythm() {
             </div>
 
             {/* Progress dots at bottom of circle */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
+            <div className="absolute bottom-5 xl:bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
               {processSteps.map((_, idx) => (
                 <button
                   key={idx}
