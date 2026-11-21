@@ -28,9 +28,5 @@ export const siteConfig = {
     ],
   },
   copyright: "© 2026 AeroTyne",
-  credits: {
-    designer: "Webestica",
-    designerUrl: "https://www.webestica.com/",
-  },
   disclaimer: "AeroTyne is an independent web design and development studio. Project names and logos shown belong to their respective owners and are used only to identify work we built.",
 };

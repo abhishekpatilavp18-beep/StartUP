@@ -82,20 +82,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Attribution */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#8b8b8b] pb-6">
+        {/* Bottom Bar: Copyright */}
+        <div className="flex items-center justify-center md:justify-start text-xs text-[#8b8b8b] pb-6">
           <span>{siteConfig.copyright}</span>
-          <span>
-            Design by{' '}
-            <a
-              href={siteConfig.credits.designerUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:underline"
-            >
-              {siteConfig.credits.designer}
-            </a>
-          </span>
         </div>
 
         <div className="pt-6 border-t border-white/5 text-[11px] text-[#606266] leading-relaxed max-w-5xl">
