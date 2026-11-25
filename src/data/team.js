@@ -12,7 +12,7 @@ export const teamMembers = [
     cardFit: "object-[center_18%]",
   },
   {
-    name: "Co-Founder",
+    name: "Vedant S Tattimani",
     role: "Co-Founder",
     image: "/images/friend.jpg",
     fitClass: "object-[60%_40%] scale-120 origin-[60%_40%]",

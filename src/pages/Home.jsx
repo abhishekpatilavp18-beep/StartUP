@@ -30,7 +30,7 @@ const homeTeamAvatars = [
     fitClass: "object-[center_18%] scale-125 origin-[center_18%]",
   },
   {
-    name: "Co-Founder",
+    name: "Vedant S Tattimani",
     image: "/images/friend.jpg",
     fitClass: "object-[60%_40%] scale-120 origin-[60%_40%]",
   },
